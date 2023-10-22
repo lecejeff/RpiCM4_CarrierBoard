@@ -1,0 +1,294 @@
+(ExpressProject "RPI-CM4-CarrierBoard"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[10/22/23]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "c:\users\jeanf\desktop\git\orcad-library\piece\part.olb"
+        (Type "Schematic Library")))
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\rpi-cm4-carrierboard.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (Display_Online_DRC_Results "TRUE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "0")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (DRC_Scope "0")
+    (DRC_Action "1")
+    (DRC_Create_Warnings "TRUE")
+    (DRC_View_Output "TRUE")
+    (DRC_View_Output_Type "2")
+    (DRC_Preserved_Waived "TRUE")
+    (RUN_Online_Rules "TRUE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Off-Page_Connectors "TRUE")
+    (DRC_Check_Ports "TRUE")
+    (DRC_Check_Unconnected_Nets "FALSE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Check_Single_Node_Nets_Online "TRUE")
+    (DRC_Check_No_Driving_Source_Online "FALSE")
+    (DRC_Check_Duplicate_NetNames_Online "TRUE")
+    (DRC_Check_Off-Page_Connectors_Online "FALSE")
+    (DRC_Check_Ports_Online "FALSE")
+    (DRC_Check_Unconnected_Nets_Online "FALSE")
+    (DRC_Check_Floating_Pins_Online "FALSE")
+    (DRC_Run_Electrical_Reports "TRUE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Run_Physical_Rules "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility_Online "FALSE")
+    (DRC_Check_PCB_Footprint_Property_Online "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync_Online "FALSE")
+    (DRC_Check_Incorrect_PinGroup_Assignment_Online "TRUE")
+    (DRC_Check_Missing_Pin_Numbers_Online "TRUE")
+    (DRC_Check_Device_With_No_Pins_Online "FALSE")
+    (DRC_Check_Power_Ground_Short_Online "FALSE")
+    (DRC_Check_Name_Prop_For_HierBlocks_Online "FALSE")
+    (DRC_Run_Physical_Reports "TRUE")
+    (DRC_Visible_Power_pins "TRUE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Run_Simulation_Rules "TRUE")
+    (DRC_Check_Pspice_Model_Lib_Path_Online "FALSE")
+    (DRC_Run_Custom_Rules "FALSE")
+    (DRC_Report_File
+       "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DRC")
+    (Board_sim_option "VHDL_flow")
+    ("Allegro Netlist Output Board File"
+       "..\pcb\rpi-cm4-carrierboard-v1_00-0a.brd"))
+  (Folder "Layout"
+    (File "..\pcb\rpi-cm4-carrierboard-v1_00-0a.brd"
+      (Type "Board File")
+      (OutputBoard "..\pcb\rpi-cm4-carrierboard-v1_00-0a.brd")
+      (NetListPath ".\allegro")
+      (ActiveBoard "1")))
+  (Folder "Outputs"
+    (File ".\rpi-cm4-carrierboard.drc"
+      (Type "Report"))
+    (File ".\allegro\pstxnet.dat"
+      (Type "Report")
+      (DisplayName "pstxnet.dat"))
+    (File ".\allegro\pstxprt.dat"
+      (Type "Report")
+      (DisplayName "pstxprt.dat"))
+    (File ".\allegro\pstchip.dat"
+      (Type "Report")
+      (DisplayName "pstchip.dat")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs"
+    (File ".\allegro\netlist.log"
+      (Type "Log File")
+      (LogFile
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\netlist.log"))
+    (File ".\allegro\netrev.lst"
+      (Type "Log File")
+      (LogFile
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\netrev.lst"))
+    (File ".\allegro\eco.txt"
+      (Type "Log File")
+      (LogFile
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\eco.txt")))
+  (PartMRUSelector
+    (25AA02E48
+      (FullPartName "25AA02E48.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (RPi_CM4
+      (FullPartName "RPi_CM4B.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "1"))
+    (MCP6L91
+      (FullPartName "MCP6L91.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (LM4041
+      (FullPartName "LM4041.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (MikroBUS
+      (FullPartName "MikroBUS.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("Diode Unidir dual SOT23-3"
+      (FullPartName "Diode Unidir dual SOT23-3.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("Diode Unidir dual SOT23-3_0"
+      (FullPartName "Diode Unidir dual SOT23-3_0.Normal")
+      (LibraryName
+         "C:\USERS\JEANF\DESKTOP\GIT\DSPEAK\HARDWARE\V1_00-0B\CAPTURE\DSPEAK-V1_00-0B.DSN")
+      (DeviceIndex "0"))
+    (ACT45B-220
+      (FullPartName "ACT45B-220.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("CHOKE CM14"
+      (FullPartName "CHOKE CM14.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (MCP2562FD-E/SN
+      (FullPartName "MCP2562FD-E/SN.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("CHOKE CM"
+      (FullPartName "CHOKE CM.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 20X2"
+      (FullPartName "HEADER 20X2.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (DRV8872
+      (FullPartName "DRV8872.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (SE555
+      (FullPartName "SE555.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (test_pad_smt_50mils
+      (FullPartName "test_pad_smt_50mils.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (test_pad
+      (FullPartName "test_pad.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("Diode Zener"
+      (FullPartName "Diode Zener.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("MOSFET P GSD"
+      (FullPartName "MOSFET P GSD.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    ("MOSFET P"
+      (FullPartName "MOSFET P.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 2"
+      (FullPartName "HEADER 2.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (TPS7A7002
+      (FullPartName "TPS7A7002.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (CAP-POL
+      (FullPartName "CAP-POL.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (TLV62130
+      (FullPartName "TLV62130.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    ("HEADER 7"
+      (FullPartName "HEADER 7.Normal")
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "POWER")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "RESET SUPERVISOR")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "SERVO")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "TFT")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "USB2")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "USB3")
+      (Path "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
+         "uSD")
+      (Path "Layout")
+      (Path "Outputs")
+      (Path "Logs")
+      (Select "Design Resources"
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 735"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1420 24 753")
+        (Scroll "-237 -7")
+        (Zoom "45")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "TOP LEVEL")
+      (Page "TOP"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1420 24 753")
+        (Scroll "-206 23")
+        (Zoom "100")
+        (Occurrence "/MIPI-DSI"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "TFT")
+      (Page "TFT LCD")))
+  (MPSSessionName "jeanf")
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_22.1\tools\capture\library"))
