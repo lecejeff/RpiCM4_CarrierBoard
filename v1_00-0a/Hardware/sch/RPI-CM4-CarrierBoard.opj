@@ -1,6 +1,6 @@
 (ExpressProject "RPI-CM4-CarrierBoard"
   (ProjectVersion "19981106")
-  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[10/24/23]")
+  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[11/06/23]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -15,7 +15,7 @@
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
     (Display_Online_DRC_Results "TRUE")
-    (ANNOTATE_Scope "0")
+    (ANNOTATE_Scope "1")
     (ANNOTATE_Mode "0")
     (ANNOTATE_Action "0")
     (Annotate_Page_Order "0")
@@ -129,8 +129,20 @@
     (File ".\allegro\eco.txt"
       (Type "Log File")
       (LogFile
-         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\eco.txt")))
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\eco.txt"))
+    (File ".\allegro\genfeed.log"
+      (Type "Log File")
+      (LogFile
+         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\genfeed.log")))
   (PartMRUSelector
+    (test_pad
+      (FullPartName "test_pad.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
+    (SPACER_M2-5_3mm_threaded
+      (FullPartName "SPACER_M2-5_3mm_threaded.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "0"))
     (Fiducial
       (FullPartName "Fiducial.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
@@ -199,10 +211,6 @@
       (FullPartName "test_pad_smt_50mils.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
       (DeviceIndex "0"))
-    (test_pad
-      (FullPartName "test_pad.Normal")
-      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
-      (DeviceIndex "0"))
     ("Diode Zener"
       (FullPartName "Diode Zener.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
@@ -225,10 +233,6 @@
       (DeviceIndex "0"))
     (CAP-POL
       (FullPartName "CAP-POL.Normal")
-      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
-      (DeviceIndex "0"))
-    (TLV62130
-      (FullPartName "TLV62130.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
       (DeviceIndex "0")))
   (GlobalState
@@ -284,6 +288,7 @@
       (Path "Design Resources"
          "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
          "uSD")
+      (Path "Design Resources" "Library")
       (Path "Layout")
       (Path "Outputs")
       (Path "Logs")
@@ -293,14 +298,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 259 0 735"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 735"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1615 24 753")
-        (Scroll "-324 0")
-        (Zoom "46")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
+        (Scroll "1012 72")
+        (Zoom "180")
         (Occurrence "/"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -309,9 +314,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-242 0")
-        (Zoom "72")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
+        (Scroll "862 894")
+        (Zoom "165")
         (Occurrence "/RPI-CM4"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -320,9 +325,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-29 36")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "2812 316")
+        (Zoom "400")
         (Occurrence "/RPI_CM4"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -331,9 +336,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-242 0")
-        (Zoom "72")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
+        (Scroll "464 0")
+        (Zoom "142")
         (Occurrence "/dsPIC"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -342,20 +347,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "22 452")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "216 154")
         (Zoom "200")
-        (Occurrence "/USB HUB"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "USB3")
-      (Page "USB HUB PCIE"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
         (Occurrence "/CAN-FD"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -364,40 +358,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
-        (Occurrence "/RESET"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "RESET SUPERVISOR")
-      (Page "RESET"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
-        (Occurrence "/MOTOR1"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
-        (Occurrence "/MOTOR2"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
-        (Occurrence "/MOTOR3"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "MOTOR DRIVE")
-      (Page "BRUSH_DC"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "88 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "233 198")
         (Zoom "200")
         (Occurrence "/uSD"))
       (Path
@@ -407,9 +369,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-29 253")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "0 642")
+        (Zoom "200")
         (Occurrence "/PSU"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -418,9 +380,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
+        (Scroll "88 72")
+        (Zoom "200")
         (Occurrence "/SERVO"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -429,9 +391,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-304 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "-358 -6")
+        (Zoom "95")
         (Occurrence "/USB2"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -440,13 +402,65 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1615 24 753")
-        (Scroll "-29 71")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "324 0")
+        (Zoom "200")
         (Occurrence "/Audio CODEC"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
       (Schematic "CODEC")
-      (Page "AUDIO CODEC")))
+      (Page "AUDIO CODEC"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "-333 0")
+        (Zoom "100"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "-333 0")
+        (Zoom "100"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "-333 0")
+        (Zoom "100"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "-333 0")
+        (Zoom "100"))
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
+        (Scroll "-333 0")
+        (Zoom "100"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "-333 0")
+        (Zoom "100"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "ANALOG INPUT")
+      (Page "AIN"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "143 416")
+        (Zoom "190")
+        (Occurrence "/MIPI-DSI"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "TFT")
+      (Page "TFT LCD"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
+        (Scroll "294 0")
+        (Zoom "200")
+        (Occurrence "/RESET"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "RESET SUPERVISOR")
+      (Page "RESET")))
   (MPSSessionName "jeanf")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_22.1\tools\capture\library"))
