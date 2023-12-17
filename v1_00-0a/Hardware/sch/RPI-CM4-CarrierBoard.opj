@@ -325,8 +325,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
-        (Scroll "1365 426")
-        (Zoom "296")
+        (Scroll "459 350")
+        (Zoom "148")
         (Occurrence "/RPI_CM4"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -336,7 +336,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1420 24 757")
-        (Scroll "206 316")
+        (Scroll "0 60")
         (Zoom "200")
         (Occurrence "/USB HUB"))
       (Path
