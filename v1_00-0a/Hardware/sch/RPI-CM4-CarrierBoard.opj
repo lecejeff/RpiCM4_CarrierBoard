@@ -1,6 +1,6 @@
 (ExpressProject "RPI-CM4-CarrierBoard"
   (ProjectVersion "19981106")
-  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[12/03/23]")
+  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[12/17/23]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -14,7 +14,7 @@
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (Display_Online_DRC_Results "TRUE")
+    (Display_Online_DRC_Results "FALSE")
     (ANNOTATE_Scope "1")
     (ANNOTATE_Mode "0")
     (ANNOTATE_Action "0")
@@ -135,6 +135,10 @@
       (LogFile
          "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\genfeed.log")))
   (PartMRUSelector
+    (RPi_CM4
+      (FullPartName "RPi_CM4B.Normal")
+      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
+      (DeviceIndex "1"))
     (SN74LVC1G07
       (FullPartName "SN74LVC1G07.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
@@ -174,10 +178,6 @@
       (FullPartName "25AA02E48.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
       (DeviceIndex "0"))
-    (RPi_CM4
-      (FullPartName "RPi_CM4B.Normal")
-      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
-      (DeviceIndex "1"))
     (MCP6L91
       (FullPartName "MCP6L91.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
@@ -288,12 +288,6 @@
       (Path "Design Resources"
          "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
          "uSD")
-      (Path "Design Resources"
-         "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
-         "Design Cache")
-      (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "c:\users\jeanf\desktop\git\orcad-library\piece\part.olb")
       (Path "Layout")
       (Path "Outputs")
       (Path "Logs")
@@ -303,14 +297,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 735"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 739"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
-        (Scroll "1376 1895")
-        (Zoom "184")
+        (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
+        (Scroll "-227 -1")
+        (Zoom "46")
         (Occurrence "/"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -319,9 +313,20 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "2200 1300")
-        (Zoom "400")
+        (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
+        (Scroll "1498 1900")
+        (Zoom "296")
+        (Occurrence "/RPI-CM4"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "CM4-A")
+      (Page "RPI-CM4A"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
+        (Scroll "1365 426")
+        (Zoom "296")
         (Occurrence "/RPI_CM4"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -330,144 +335,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
-        (Scroll "306 623")
-        (Zoom "142")
-        (Occurrence "/dsPIC"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "DSPIC")
-      (Page "dsPIC33CK"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
-        (Scroll "0 397")
-        (Zoom "190")
-        (Occurrence "/MIPI-DSI"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "TFT")
-      (Page "TFT LCD"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/RESET"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "RESET SUPERVISOR")
-      (Page "RESET"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-58 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1420 24 757")
+        (Scroll "206 316")
+        (Zoom "200")
         (Occurrence "/USB HUB"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
       (Schematic "USB3")
-      (Page "USB HUB PCIE"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/MOTOR1"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/MOTOR2"))
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/MOTOR3"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "MOTOR DRIVE")
-      (Page "BRUSH_DC"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "1688 28")
-        (Zoom "400")
-        (Occurrence "/PSU"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "POWER")
-      (Page "PSU"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "0 0")
-        (Zoom "200")
-        (Occurrence "/Audio CODEC"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "CODEC")
-      (Page "AUDIO CODEC"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/CAN-FD"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "CAN_FD")
-      (Page "CAN_FD"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/uSD"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "uSD")
-      (Page "uSD CARD"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/SERVO"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "SERVO")
-      (Page "SERVO"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 753")
-        (Scroll "-333 0")
-        (Zoom "100")
-        (Occurrence "/USB2"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "USB2")
-      (Page "USB MUX"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 753")
-        (Scroll "-58 263")
-        (Zoom "100")
-        (Occurrence "/RPI-CM4"))
-      (Path
-         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "CM4-A")
-      (Page "RPI-CM4A")))
+      (Page "USB HUB PCIE")))
   (MPSSessionName "jeanf")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_22.1\tools\capture\library"))
