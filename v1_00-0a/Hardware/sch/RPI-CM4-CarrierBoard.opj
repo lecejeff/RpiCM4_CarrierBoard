@@ -1,6 +1,6 @@
 (ExpressProject "RPI-CM4-CarrierBoard"
   (ProjectVersion "19981106")
-  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[12/17/23]")
+  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[12/19/23]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -314,8 +314,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
-        (Scroll "1498 1900")
-        (Zoom "296")
+        (Scroll "-129 0")
+        (Zoom "74")
         (Occurrence "/RPI-CM4"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -325,8 +325,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
-        (Scroll "459 350")
-        (Zoom "148")
+        (Scroll "1099 176")
+        (Zoom "284")
         (Occurrence "/RPI_CM4"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -336,12 +336,12 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1420 24 757")
-        (Scroll "0 60")
+        (Scroll "1554 484")
         (Zoom "200")
-        (Occurrence "/USB HUB"))
+        (Occurrence "/PSU"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
-      (Schematic "USB3")
-      (Page "USB HUB PCIE")))
+      (Schematic "POWER")
+      (Page "PSU")))
   (MPSSessionName "jeanf")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_22.1\tools\capture\library"))
