@@ -1,6 +1,6 @@
 (ExpressProject "RPI-CM4-CarrierBoard"
   (ProjectVersion "19981106")
-  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[12/19/23]")
+  (SoftwareVersion "22.1 S001 (4077794)  [12/9/2022]-[12/21/23]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -135,6 +135,9 @@
       (LogFile
          "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\allegro\genfeed.log")))
   (PartMRUSelector
+    (PORTBOTH-R
+      (LibraryName "C:\CADENCE\SPB_22.1\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (RPi_CM4
       (FullPartName "RPi_CM4B.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
@@ -230,10 +233,6 @@
     (test_pad_smt_50mils
       (FullPartName "test_pad_smt_50mils.Normal")
       (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
-      (DeviceIndex "0"))
-    ("Diode Zener"
-      (FullPartName "Diode Zener.Normal")
-      (LibraryName "C:\USERS\JEANF\DESKTOP\GIT\ORCAD-LIBRARY\PIECE\PART.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -302,9 +301,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
-        (Scroll "-227 -1")
-        (Zoom "46")
+        (Placement "44 0 1 -1 -1 5 24 5 1373 24 757")
+        (Scroll "0 429")
+        (Zoom "75")
         (Occurrence "/"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -313,8 +312,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
-        (Scroll "-129 0")
+        (Placement "44 0 1 -1 -1 5 24 5 1373 24 757")
+        (Scroll "-105 0")
         (Zoom "74")
         (Occurrence "/RPI-CM4"))
       (Path
@@ -324,7 +323,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1420 24 757")
+        (Placement "44 0 1 -1 -1 5 24 5 1373 24 757")
         (Scroll "1099 176")
         (Zoom "284")
         (Occurrence "/RPI_CM4"))
@@ -335,8 +334,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1420 24 757")
-        (Scroll "1554 484")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
+        (Scroll "1442 484")
         (Zoom "200")
         (Occurrence "/PSU"))
       (Path
