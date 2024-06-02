@@ -1,0 +1,120 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2835";
+	dsi_frag: fragment@0 {
+		target = <&dsi1>;
+		__overlay__ {
+			status = "okay";
+			#address-cells = <1>;
+			#size-cells = <0>;
+			port {
+				dsi_out:endpoint {
+					remote-endpoint = <&panel_dsi_port>;
+				};
+			};
+
+			panel: panel-dsi-generic@0 {
+				compatible = "Generic,panel-dsi","panel-dsi","simple-panel-dsi";
+				reg = <0>;
+				power-supply = <0>;
+				backlight = <0>;
+				bpc = <8>;
+				bus-format = <0x100a>;
+				width-mm = <154>;
+				height-mm = <85>;
+				prepare-delay-ms = <10>;
+				reset-delay-ms = <20>;
+				init-delay-ms = <120>;
+				dsi-flags = <(0x01 | 0x02 | 0x800)>;
+				dsi-color-format = "RGB888";
+				mode = "MODE_VIDEO";
+
+		    		panel-init-sequence = [
+					15 00 02 87 5a 15 00 02 B2 10 15 00 02 80 4B 15 00 02 81 FF 15 00 02 82 1A 15 00 02 83 88 15 00 02 84 8F 15 00 02 85 3515 00 02 86 B0 05 00 01 21
+		    		];
+
+				port {
+					panel_dsi_port: endpoint {
+						data-lanes = <4>;
+						remote-endpoint = <&dsi_out>;
+					};
+				};
+
+				display-timings {
+		    			native-mode = <&timing2>;
+					timing: panel-timing {
+						clock-frequency = <51200000>; 	//dclk
+						hactive = <1024>; 		//hactive
+						vactive = <600>; 		//vactive
+						hfront-porch = <160>; 		//hfp
+						hback-porch = <160>; 		//hbp
+						hsync-len = <70>; 		//hpw
+						vfront-porch = <12>; 		//vfp
+						vsync-len = <10>; 		//vpw
+						vback-porch = <23>; 		//vbp
+						hsync-active = <0>; 		//hync active control
+						vsync-active = <0>; 		//vsync active control
+						de-active = <1>; 		//den active control
+						pixelclk-active = <0>; 		//dclk active control
+
+		    			};
+		    		};
+			};
+		};
+	};
+	fragment@1 {
+		target = <&panel_dsi_port>;
+		__dormant__ {
+			data-lanes = <1>;
+		};
+	};
+
+	fragment@2 {
+		target = <&panel_dsi_port>;
+		__dormant__ {
+			data-lanes = <1 2>;
+		};
+	};
+
+	fragment@3 {
+		target = <&panel_dsi_port>;
+		__dormant__ {
+			data-lanes = <1 2 3>;
+		};
+	};
+
+	fragment@4 {
+		target = <&panel_dsi_port>;
+		__dormant__ {
+			data-lanes = <1 2 3 4>;
+		};
+	};
+
+	__overrides__ {
+		dsi0 = <&dsi_frag>, "target:0=",<&dsi0>;
+
+		clock-frequency = <&timing>, "clock-frequency:0";
+		hactive = <&timing>, "hactive:0";
+		hfp = <&timing>, "hfront-porch:0";
+		hsync = <&timing>, "hsync-len:0";
+		hbp = <&timing>, "hback-porch:0";
+		vactive = <&timing>, "vactive:0";
+		vfp = <&timing>, "vfront-porch:0";
+		vsync = <&timing>, "vsync-len:0";
+		vbp = <&timing>, "vback-porch:0";
+
+		width-mm = <&panel>, "width-mm:0";
+		height-mm = <&panel>, "height-mm:0";
+
+		rgb565 = <&panel>, "dsi-color-format=RGB565";
+		rgb666p = <&panel>, "dsi-color-format=RGB666_PACKED";
+		rgb666 = <&panel>, "dsi-color-format=RGB666";
+		rgb888 = <&panel>, "dsi-color-format=RGB888";
+		one-lane = <0>,"+1";
+		two-lane = <0>,"+2";
+		three-lane = <0>,"+3";
+		four-lane = <0>,"+4";
+	};
+};
