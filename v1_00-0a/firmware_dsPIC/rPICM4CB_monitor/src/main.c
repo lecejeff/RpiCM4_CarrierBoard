@@ -4,6 +4,7 @@
 #include "i2c.h"
 #include "bno080.h"
 #include "pwm.h"
+#include "adc.h"
 
 // FSEC
 #pragma config BWRP = OFF               // Boot Segment Write-Protect bit (Boot Segment may be written)
@@ -84,6 +85,16 @@
 // #pragma config statements should precede project file includes.
 // Use project enums instead of #define for ON and OFF.
 
+// Access to ADC struct members
+extern STRUCT_ADC ADC_struct[ADC_QTY];
+STRUCT_ADC *ADCAN0_struct = &ADC_struct[ADC_CHANNEL_AN0];
+STRUCT_ADC *ADCAN13_struct = &ADC_struct[ADC_CHANNEL_AN13];
+STRUCT_ADC *ADCAN14_struct = &ADC_struct[ADC_CHANNEL_AN14];
+STRUCT_ADC *ADCAN20_struct = &ADC_struct[ADC_CHANNEL_AN20];
+STRUCT_ADC *ADCAN23_struct = &ADC_struct[ADC_CHANNEL_AN23];
+STRUCT_ADC *ADCAN24_struct = &ADC_struct[ADC_CHANNEL_AN24];
+STRUCT_ADC *ADCAN25_struct = &ADC_struct[ADC_CHANNEL_AN25];
+
 // Access to PWM struct members
 extern STRUCT_PWM PWM_struct[PWM_QTY];
 STRUCT_PWM *PWM1L_struct = &PWM_struct[PWM_1L];
@@ -95,9 +106,11 @@ STRUCT_PWM *PWM5L_struct = &PWM_struct[PWM_5H];
 STRUCT_PWM *PWM7H_struct = &PWM_struct[PWM_7L];
 STRUCT_PWM *PWM7L_struct = &PWM_struct[PWM_7H];
 
+// Access to TIMER struct members
 extern STRUCT_TIMER TIMER_struct[TIMER_QTY];
 STRUCT_TIMER *TIMER1_struct = &TIMER_struct[TIMER_1];
 
+// Access to UART struct members
 extern STRUCT_UART UART_struct[UART_QTY];
 STRUCT_UART *UART_DEBUG_struct = &UART_struct[UART_1];
 STRUCT_UART *UART_MKB1_struct = &UART_struct[UART_2];
@@ -122,9 +135,33 @@ uint16_t rh_pRH = 0;
 uint8_t rhH = 0, rhL = 0; 
 uint8_t duty = 0;
 
+uint32_t raw_conv;
+uint16_t real_mv;
+uint8_t u=0, d=0, h=0, th=0, hth=0;
+
 int main (void)
 {
     dspic_init();
+    
+    ADC_init_struct(ADCAN0_struct, ADC_CHANNEL_AN0);
+    ADC_init_struct(ADCAN13_struct, ADC_CHANNEL_AN13);
+    ADC_init_struct(ADCAN14_struct, ADC_CHANNEL_AN14);
+    ADC_init_struct(ADCAN20_struct, ADC_CHANNEL_AN20);
+    ADC_init_struct(ADCAN23_struct, ADC_CHANNEL_AN23);
+    ADC_init_struct(ADCAN24_struct, ADC_CHANNEL_AN24);
+    ADC_init_struct(ADCAN25_struct, ADC_CHANNEL_AN25);
+    
+    ADC_stop();
+    
+    ADC_init(ADCAN0_struct);
+    ADC_init(ADCAN13_struct);
+    ADC_init(ADCAN14_struct);
+    ADC_init(ADCAN20_struct);
+    ADC_init(ADCAN23_struct);
+    ADC_init(ADCAN24_struct);
+    ADC_init(ADCAN25_struct);
+    
+    ADC_set_channel(ADCAN23_struct);
     
     UART_init(UART_DEBUG_struct, UART_1, 115200, UART_MAX_TX, UART_MAX_RX, 0);
     UART_init(UART_MKB1_struct, UART_2, 115200, UART_MAX_TX, UART_MAX_RX, 1);
@@ -158,6 +195,12 @@ int main (void)
     //UART_putstr_dma(UART_MKB2_struct, "\r\nrPICM4CB dsPIC33CK UART MKB2 at 115200 with DMA !!!\r\n");
     
     TIMER_start(TIMER1_struct);
+    
+    ADCON3Hbits.CLKSEL = 1; // clock from Fosc, set to 100us sampling time (10kHz)
+    ADCON3Hbits.CLKDIV = 100; // no clock divider (1:8)  
+    ADCON2Lbits.SHRADCS = 25;
+    ADCON2Hbits.SHRSAMC = 10;
+    ADC_start();
     while (1)
     {
         if (TIMER_get_state(TIMER1_struct, TIMER_INT_STATE))
@@ -202,22 +245,39 @@ int main (void)
             if (++counter_sec > TIMER_get_freq(TIMER1_struct))
             {
                 counter_sec = 0;
-                duty += 10;
-                if (duty > 100){duty = 0;}
-                PWM_change_duty_perc(PWM1L_struct, duty);
-                PWM_change_duty_perc(PWM1H_struct, duty);
-                PWM_request_update(PWM1L_struct);
-                //UART_putstr_dma(UART_DEBUG_struct, "\r\n-Test UART debug with DMA !!!-\r\n");
-                UART_putstr(UART_DEBUG_struct, "Data from SHT40 = ");
-                UART_putc_ascii(UART_DEBUG_struct, tDegL);
-                UART_putc(UART_DEBUG_struct, ':');
-                UART_putc_ascii(UART_DEBUG_struct, rhL);
+                UART_putstr(UART_DEBUG_struct, "12V0 CB Monitor = ");
+                ADCON3Lbits.SHRSAMP = 0;
+                ADCON3Lbits.CNVRTCH = 1;
+                raw_conv = ADCBUF23;           // Convert to mv
+                raw_conv = raw_conv * 1000;
+                real_mv = (uint16_t)((((float)raw_conv * 3.3) / 4096.0) / 0.25143);
+                u = real_mv % 10;
+                d = (real_mv / 10)%10;  
+                h = (real_mv / 100)%10;  
+                th = (real_mv / 1000)%10;   
+                hth = (real_mv / 10000); 
+                UART_putc(UART_DEBUG_struct, hth + 0x30);
+                UART_putc(UART_DEBUG_struct, th + 0x30);
+                UART_putc(UART_DEBUG_struct, '.');
+                UART_putc(UART_DEBUG_struct, h + 0x30);
+                UART_putc(UART_DEBUG_struct, d + 0x30);
+                UART_putc(UART_DEBUG_struct, u + 0x30);                
+//                duty += 10;
+//                if (duty > 100){duty = 0;}
+//                PWM_change_duty_perc(PWM1L_struct, duty);
+//                PWM_change_duty_perc(PWM1H_struct, duty);
+//                PWM_request_update(PWM1L_struct);
+//                //UART_putstr_dma(UART_DEBUG_struct, "\r\n-Test UART debug with DMA !!!-\r\n");
+//                UART_putstr(UART_DEBUG_struct, "Data from SHT40 = ");
+//                UART_putc_ascii(UART_DEBUG_struct, tDegL);
+//                UART_putc(UART_DEBUG_struct, ':');
+//                UART_putc_ascii(UART_DEBUG_struct, rhL);
                 UART_putc(UART_DEBUG_struct, 0x0D);
                 UART_putc(UART_DEBUG_struct, 0x0A);
                 DSPIC_LED1_WR = !DSPIC_LED1_WR;
-                UART_putstr_dma(UART_MKB1_struct, "\r\n-Test UART MKB1 with DMA !!!-\r\n");
+//                UART_putstr_dma(UART_MKB1_struct, "\r\n-Test UART MKB1 with DMA !!!-\r\n");
                 DSPIC_LED2_WR = !DSPIC_LED2_WR;
-                UART_putstr_dma(UART_MKB2_struct, "\r\n-Test UART MKB2 with DMA !!!-\r\n");
+//                UART_putstr_dma(UART_MKB2_struct, "\r\n-Test UART MKB2 with DMA !!!-\r\n");
             }
         }
     }

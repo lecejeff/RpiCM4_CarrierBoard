@@ -5,29 +5,52 @@
 //
 // Includes  :  ADC.h
 //           
-// Purpose   :  Driver for the dsPIC33EP ADC core
+// Purpose   :  Driver for the dsPIC33CK ADC core
 //
-//Jean-Francois Bilodeau    MPLab X v5.10    10/02/2020  
+//Jean-Francois Bilodeau    MPLab X v6.05    24/06/2024  
 //****************************************************************************//
 #include "ADC.h"
-unsigned char adc1_init = 0;
-unsigned char adc2_init = 0;
-unsigned char adc1_sample_ready = ADC_SAMPLE_NOT_READY;
-unsigned char adc2_sample_ready = ADC_SAMPLE_NOT_READY;
+STRUCT_ADC ADC_struct[ADC_QTY];
 
-void ADC_init_struct (STRUCT_ADC *adc, uint8_t port, 
-                        uint8_t channel, uint8_t resolution, uint8_t format, 
-                        uint8_t sample_clk_src, uint8_t sample_clk_srcg,
-                        uint16_t sample_conv_clk)
+int8_t ADC_init_struct (STRUCT_ADC *adc, uint8_t channel)
 {
-    adc->state = ADC_STATE_INITIALIZED;
-    adc->port = port;
-    adc->channel = channel;
-    adc->resolution = resolution;
-    adc->format = format;
-    adc->sample_clk_src = sample_clk_src;
-    adc->sample_clk_srcg = sample_clk_srcg;
-    adc->sample_conv_clk = (uint8_t)(sample_conv_clk - 1);  // Between 1 and 256
+    switch (channel)
+    {
+        case ADC_CHANNEL_AN0:       // rPICM4CB MKB2 AN input on RA0
+            adc->channel = ADC_CHANNEL_AN0;
+            break;
+
+        case ADC_CHANNEL_AN13:      // rPICM4CB 1V8 CB AN input on RC1
+            adc->channel = ADC_CHANNEL_AN13;
+            break;
+
+        case ADC_CHANNEL_AN14:      // rPICM4CB 1V0 CB AN input on RC2
+            adc->channel = ADC_CHANNEL_AN14;
+            break;
+
+        case ADC_CHANNEL_AN20:      // rPICM4CB MKB1 AN input on RE0
+            adc->channel = ADC_CHANNEL_AN20;
+            break;
+
+        case ADC_CHANNEL_AN23:      // rPICM4CB 12V0 CB AN input on RE3
+            adc->channel = ADC_CHANNEL_AN23;
+            break;
+
+        case ADC_CHANNEL_AN24:      // rPICM4CB 5V0 CB AN input on RF6
+            adc->channel = ADC_CHANNEL_AN24;
+            break;
+
+        case ADC_CHANNEL_AN25:      // rPICM4CB 3V3 CB AN input on RF7
+            adc->channel = ADC_CHANNEL_AN25;
+            break;
+            
+        default:
+            return -1;
+            break;
+    } 
+    
+    adc->state = ADC_INSTANTIATED;
+    return 0;
 }
 
 //*************************void ADC_init (void)*******************************//
@@ -43,139 +66,136 @@ void ADC_init_struct (STRUCT_ADC *adc, uint8_t port,
 //
 //Jean-Francois Bilodeau    MPLab X v5.10    11/02/2020 
 //****************************************************************************//
-void ADC_init (STRUCT_ADC *adc)
+int8_t ADC_init (STRUCT_ADC *adc)
 {
-    // Code executed on 1st initialization of ADC1 state machine
-    if (adc->port == ADC_PORT_1)
-    {
-        ADC_stop(ADC_PORT_1);                              // Stop ADC1 module if it was in use
-        AD1CON2bits.VCFG = 0;                       // Converter voltage reference set to AVDD / AVSS
-        AD1CON2bits.CSCNA = 1;                      // Scans input for CH0+
-        AD1CON1bits.AD12B = adc->resolution;        // Setup ADC1 module resolution to 12b
-        AD1CON1bits.FORM = adc->format;             // Setup ADC1 output format
-        AD1CON1bits.SSRC = adc->sample_clk_src;     // Setup ADC1 sample clock source
-        AD1CON1bits.SSRCG = adc->sample_clk_srcg;   // Setup ADC1 sample clock source group
-        AD1CON3bits.ADRC = 0;                       // ADC clock always derived from system clock
-        AD1CON3bits.ADCS = adc->sample_conv_clk;    // Set conversion clock
-        AD1CON3bits.SAMC = 0x1F;
-        if (adc1_init == 0)
-        {
-            adc1_init = 1;
-        }
-        else
-        {
-            AD1CON2bits.SMPI++; 
-        }
-        // Auto sample configuration
-        if ((AD1CON1bits.SSRC == ADC_AUTO_CONVERT) && (AD1CON1bits.SSRCG == 0))
-        {
-            AD1CON1bits.ASAM = 1;
-            if (adc->channel <= 15)
-            {
-                AD1CSSL = AD1CSSL | (1 << adc->channel);
-            }
-            else
-            {
-                AD1CSSH = AD1CSSH | (1 << (adc->channel-16));
-            }
-        }
-        
-        // Manual sample configuration
-        if ((AD1CON1bits.SSRC == ADC_MANUAL_CONVERT) && (AD1CON1bits.SSRCG == 0))
-        {
-            
-        }
-    } 
-
-    // Code executed on 1st initialization of ADC2 state machine
-    if (adc->port == ADC_PORT_2)
-    {
-        ADC_stop(ADC_PORT_2);                              // Stop ADC2 module if it was in use
-        AD2CON2bits.VCFG = 0;                       // Converter voltage reference set to AVDD / AVSS
-        AD2CON2bits.CSCNA = 1;                      // Scans input for CH0+
-        //AD2CON1bits.AD12B = adc->resolution;        // Setup ADC2 module resolution to 12b
-        AD2CON1bits.FORM = adc->format;             // Setup ADC2 output format
-        AD2CON1bits.SSRC = adc->sample_clk_src;     // Setup ADC2 sample clock source
-        AD2CON1bits.SSRCG = adc->sample_clk_srcg;   // Setup ADC2 sample clock source group
-        AD2CON3bits.ADRC = 0;                       // ADC clock always derived from system clock
-        AD2CON3bits.ADCS = adc->sample_conv_clk;    // Set conversion clock
-        AD2CON3bits.SAMC = 0x1F;  
-        
-        if (adc2_init == 0)
-        {
-            adc2_init = 1;
-        }
-        else
-        {
-            AD2CON2bits.SMPI++; 
-        }        
-        // Auto sample configuration
-        if ((AD2CON1bits.SSRC == ADC_AUTO_CONVERT) && (AD2CON1bits.SSRCG == 0))
-        {
-            AD2CON1bits.ASAM = 1;
-            if (adc->channel <= 15)
-            {
-                AD2CSSL = AD2CSSL | (1 << adc->channel);
-            }
-//            else
-//            {
-//                AD2CSSH = AD2CSSH | (1 << adc->channel);
-//            }
-        }
-        
-        // Manual sample configuration
-        if ((AD2CON1bits.SSRC == ADC_MANUAL_CONVERT) && (AD2CON1bits.SSRCG == 0))
-        {
-            
-        }
-    }
-    
     // Initialize dsPIC pins to analog inputs
     switch (adc->channel)
     {
-        case ADC_CHANNEL_AN0:
-            // AIN_AN0 (±3.3V analog input) on RB0
-            TRISBbits.TRISB0 = 1;   // Set ANI_AN0 pin to input
-            ANSELBbits.ANSB0 = 1;   // Set ANI_AN0 pin to analog input mode
+        case ADC_CHANNEL_AN0:       // rPICM4CB MKB2 AN input on RA0
+            ADMOD0Lbits.SIGN0 = 0;  // unsigned output data
+            ADMOD0Lbits.DIFF0 = 0;  // channel is single-ended
+            TRISAbits.TRISA0 = 1;
+            ANSELAbits.ANSELA0 = 1;
+            
+            ADIELbits.IE0 = 1;
+            IEC5bits.ADCAN0IE = 1;
+            IFS5bits.ADCAN0IF = 0;
             break;
 
-        case ADC_CHANNEL_AN1:
-            // AIN_AN1 (±3.3V analog input) on RB1
-            TRISBbits.TRISB1 = 1;   // Set ANI_AN1 pin to input
-            ANSELBbits.ANSB1 = 1;   // Set ANI_AN1 pin to analog input mode  
+        case ADC_CHANNEL_AN13:      // rPICM4CB 1V8 CB AN input on RC1
+            ADMOD0Hbits.SIGN13 = 0; // unsigned output data
+            ADMOD0Hbits.DIFF13 = 0; // channel is single-ended
+            TRISCbits.TRISC1 = 1;
+            ANSELCbits.ANSELC1 = 1;
+            
+            ADIELbits.IE13 = 1;
+            IEC6bits.ADCAN13IE = 1;
+            IFS6bits.ADCAN13IF = 0;
             break;
 
-        case ADC_CHANNEL_AN2:
-            // AIN_AN2 (3.3V analog potentiometer) on RB2
-            TRISBbits.TRISB2 = 1;   // Set ANI_AN2 pin to input
-            ANSELBbits.ANSB2 = 1;   // Set ANI_AN2 pin to analog input mode
+        case ADC_CHANNEL_AN14:      // rPICM4CB 1V0 CB AN input on RC2
+            ADMOD0Hbits.SIGN14 = 0; // unsigned output data
+            ADMOD0Hbits.DIFF14 = 0; // channel is single-ended
+            TRISCbits.TRISC2 = 1;
+            ANSELCbits.ANSELC2 = 1;
+            
+            ADIELbits.IE14 = 1;
+            IEC6bits.ADCAN14IE = 1;
+            IFS6bits.ADCAN14IF = 0;
             break;
 
-        case ADC_CHANNEL_AN12:
-            // AIN_AN12 (±10V analog input) on RB12
-            TRISBbits.TRISB12 = 1;   // Set ANI_AN12 pin to input
-            ANSELBbits.ANSB12 = 1;   // Set ANI_AN12 pin to analog input mode  
+        case ADC_CHANNEL_AN20:      // rPICM4CB MKB1 AN input on RE0
+            ADMOD1Lbits.SIGN20 = 0; // unsigned output data
+            ADMOD1Lbits.DIFF20 = 0; // channel is single-ended
+            TRISEbits.TRISE0 = 1;
+            ANSELEbits.ANSELE0 = 1;
+            
+            ADIEHbits.IE20 = 1;
+            IEC6bits.ADCAN20IE = 1;
+            IFS6bits.ADCAN20IF = 0;
             break;
 
-        case ADC_CHANNEL_AN13:
-            // AIN_AN13 (±10V analog input) on RB13
-            TRISBbits.TRISB13 = 1;   // Set ANI_AN13 pin to input
-            ANSELBbits.ANSB13 = 1;   // Set ANI_AN13 pin to analog input mode   
+        case ADC_CHANNEL_AN23:      // rPICM4CB 12V0 CB AN input on RE3
+            ADMOD1Lbits.SIGN23 = 0; // unsigned output data
+            ADMOD1Lbits.DIFF23 = 0; // channel is single-ended
+            TRISEbits.TRISE3 = 1; 
+            ANSELEbits.ANSELE3 = 1; 
+            
+            ADIEHbits.IE23 = 1;
+            IEC7bits.ADCAN23IE = 1;
+            IFS7bits.ADCAN23IF = 0;
             break;
 
-        case ADC_CHANNEL_AN14:
-            // AIN_AN14 (±10V analog input) on RB14
-            TRISBbits.TRISB14 = 1;   // Set ANI_AN14 pin to input
-            ANSELBbits.ANSB14 = 1;   // Set ANI_AN14 pin to analog input mode 
+        case ADC_CHANNEL_AN24:      // rPICM4CB 5V0 CB AN input on RF6
+            ADMOD1Hbits.SIGN24 = 0; // unsigned output data
+            ADMOD1Hbits.DIFF24 = 0; // channel is single-ended
+            TRISFbits.TRISF6 = 1; 
+            ANSELFbits.ANSELF6 = 1;
+            
+            ADIEHbits.IE24 = 1;
+            IEC12bits.ADCAN24IE = 1;
+            IFS12bits.ADCAN24IF = 0;
             break;
 
-        case ADC_CHANNEL_AN15:
-            // AIN_AN15 (±10V analog input) on RB15
-            TRISBbits.TRISB15 = 1;   // Set ANI_AN15 pin to input
-            ANSELBbits.ANSB15 = 1;   // Set ANI_AN15 pin to analog input mode 
+        case ADC_CHANNEL_AN25:      // rPICM4CB 3V3 CB AN input on RF7
+            ADMOD1Hbits.SIGN25 = 0; // unsigned output data
+            ADMOD1Hbits.DIFF25 = 0; // channel is single-ended
+            TRISFbits.TRISF7 = 1; 
+            ANSELFbits.ANSELF7 = 1;
+            
+            ADIEHbits.IE25 = 1;
+            IEC12bits.ADCAN25IE = 1;
+            IFS12bits.ADCAN25IF = 0;
+            break;
+            
+        default:
+            return -1;
             break;
     } 
-    adc->state = ADC_STATE_ASSIGNED;
+    
+    ADCON1Hbits.FORM = 0;   // Unsigned for all channels
+    ADCON1Hbits.SHRRES = 3; // 12b for all channels
+    adc->state = ADC_INITIALIZED;
+    return 0;
+}
+
+int8_t ADC_set_channel (STRUCT_ADC *adc)
+{
+    switch (adc->channel)
+    {
+        case ADC_CHANNEL_AN0:       // rPICM4CB MKB2 AN input on RA0
+            ADCON3Lbits.CNVCHSEL = 0;   
+            break;
+
+        case ADC_CHANNEL_AN13:      // rPICM4CB 1V8 CB AN input on RC1
+            ADCON3Lbits.CNVCHSEL = 13;  
+            break;
+
+        case ADC_CHANNEL_AN14:      // rPICM4CB 1V0 CB AN input on RC2
+            ADCON3Lbits.CNVCHSEL = 14; 
+            break;
+
+        case ADC_CHANNEL_AN20:      // rPICM4CB MKB1 AN input on RE0
+            ADCON3Lbits.CNVCHSEL = 20; 
+            break;
+
+        case ADC_CHANNEL_AN23:      // rPICM4CB 12V0 CB AN input on RE3
+            ADCON3Lbits.CNVCHSEL = 23; 
+            break;
+
+        case ADC_CHANNEL_AN24:      // rPICM4CB 5V0 CB AN input on RF6
+            ADCON3Lbits.CNVCHSEL = 24; 
+            break;
+
+        case ADC_CHANNEL_AN25:      // rPICM4CB 3V3 CB AN input on RF7
+            ADCON3Lbits.CNVCHSEL = 25; 
+            break;
+            
+        default:
+            return -1;
+            break;
+    }
+    return 0;    
 }
 
 //************************void ADC_start (void)*******************************//
@@ -191,22 +211,14 @@ void ADC_init (STRUCT_ADC *adc)
 //
 //Jean-Francois Bilodeau    MPLab X v5.10    11/02/2020 
 //****************************************************************************//
-void ADC_start (uint8_t port)
+int8_t ADC_start (void)
 {
-    switch (port)
-    {
-        case ADC_PORT_1:
-            IFS0bits.AD1IF = 0;     // Clear flag value
-            IEC0bits.AD1IE = 1;     // Enable ADC interrupt
-            AD1CON1bits.ADON = 1;   // Start the ADC core            
-            break;
-            
-        case ADC_PORT_2:
-            IFS1bits.AD2IF = 0;     // Clear flag value
-            IEC1bits.AD2IE = 1;     // Enable ADC interrupt
-            AD2CON1bits.ADON = 1;   // Start the ADC core                  
-            break;
-    }
+    ADCON5Hbits.WARMTIME = 15;
+    ADCON1Lbits.ADON = 1; 
+    ADCON5Lbits.SHRPWR = 1;
+    while (ADCON5Lbits.SHRRDY == 0);
+    ADCON3Hbits.SHREN = 1; 
+    return 0;
 }
 
 //*************************void ADC_stop (void)*******************************//
@@ -222,22 +234,12 @@ void ADC_start (uint8_t port)
 //
 //Jean-Francois Bilodeau    MPLab X v5.10    11/02/2020 
 //****************************************************************************//
-void ADC_stop (uint8_t port)
+int8_t ADC_stop (void)
 {
-    switch (port)
-    {
-        case ADC_PORT_1:
-            AD1CON1bits.ADON = 0;   // Stop the ADC core   
-            IEC0bits.AD1IE = 0;     // Disable ADC interrupt
-            IFS0bits.AD1IF = 0;     // Clear flag value                               
-            break;
-            
-        case ADC_PORT_2:
-            AD2CON1bits.ADON = 0;   // Stop the ADC core   
-            IEC1bits.AD2IE = 0;     // Disable ADC interrupt
-            IFS1bits.AD2IF = 0;     // Clear flag value                    
-            break;
-    }
+    ADCON1Lbits.ADON = 0;       // Stop the global ADC core   
+    ADCON3Hbits.SHREN = 0;
+    ADCON5Lbits.SHRPWR = 0;    
+    return 0;
 }
 
 //***************uint8_t ADC_sample_status (void)***********************//
@@ -255,28 +257,36 @@ void ADC_stop (uint8_t port)
 //****************************************************************************//
 uint8_t ADC_sample_status (STRUCT_ADC *adc)
 {
-    switch(adc->port)
+    switch(adc->channel)
     {
-        case ADC_PORT_1:
-            if (adc1_sample_ready == ADC_SAMPLE_READY)
-            {
-                adc1_sample_ready = ADC_SAMPLE_NOT_READY;   // Clear flag
-                return ADC_SAMPLE_READY;                        // Sample ready to be read
-            }
-            else
-                return ADC_SAMPLE_NOT_READY;
+        case ADC_CHANNEL_AN0:       // rPICM4CB MKB2 AN input on RA0
+            return ADSTATLbits.AN0RDY;  
             break;
-            
-        case ADC_PORT_2:
-            if (adc2_sample_ready == ADC_SAMPLE_READY)
-            {
-                adc2_sample_ready = ADC_SAMPLE_NOT_READY;   // Clear flag
-                return ADC_SAMPLE_READY;                        // Sample ready to be read
-            } 
-            else
-                return ADC_SAMPLE_NOT_READY;            
+
+        case ADC_CHANNEL_AN13:      // rPICM4CB 1V8 CB AN input on RC1
+            return ADSTATLbits.AN13RDY;   
             break;
-            
+
+        case ADC_CHANNEL_AN14:      // rPICM4CB 1V0 CB AN input on RC2
+            return ADSTATLbits.AN14RDY; 
+            break;
+
+        case ADC_CHANNEL_AN20:      // rPICM4CB MKB1 AN input on RE0
+            return ADSTATHbits.AN20RDY; 
+            break;
+
+        case ADC_CHANNEL_AN23:      // rPICM4CB 12V0 CB AN input on RE3
+            return ADSTATHbits.AN23RDY; 
+            break;
+
+        case ADC_CHANNEL_AN24:      // rPICM4CB 5V0 CB AN input on RF6
+            return ADSTATHbits.AN24RDY;  
+            break;
+
+        case ADC_CHANNEL_AN25:      // rPICM4CB 3V3 CB AN input on RF7
+            return ADSTATHbits.AN25RDY; 
+            break;
+        
         default:
             return 0;
             break;
@@ -298,111 +308,94 @@ uint8_t ADC_sample_status (STRUCT_ADC *adc)
 //****************************************************************************//
 uint16_t ADC_get_raw_channel (STRUCT_ADC *adc)
 {
-    switch (adc->port)
-    {
-        case ADC_PORT_1:
-            switch(adc->channel)
-            {     
-                case ADC_CHANNEL_AN12:
-                    return ADC1BUF0;
-                    break;
-                case ADC_CHANNEL_AN13:
-                    return ADC1BUF1;
-                    break;
-                case ADC_CHANNEL_AN14:
-                    return ADC1BUF2;
-                    break;
-                case ADC_CHANNEL_AN15:
-                    return ADC1BUF3;
-                    break;            
-                default:
-                    return 0;
-                    break;
-            }
-            break;
-            
-        case ADC_PORT_2:
-            switch(adc->channel)
-            {     
-                case ADC_CHANNEL_AN0:
-                    return ADC2BUF0;
-                    break;
-                case ADC_CHANNEL_AN1:
-                    return ADC2BUF1;
-                    break;
-                case ADC_CHANNEL_AN2:
-                    return ADC2BUF2;
-                    break;        
-                default:
-                    return 0;
-                    break;
-            }
+    switch(adc->channel)
+    {     
+        case ADC_CHANNEL_AN0:       // rPICM4CB MKB2 AN input on RA0
+            adc->sample_ready = 0;
+            return adc->value;  
             break;
 
+        case ADC_CHANNEL_AN13:      // rPICM4CB 1V8 CB AN input on RC1
+            adc->sample_ready = 0;
+            return adc->value; 
+            break;
+
+        case ADC_CHANNEL_AN14:      // rPICM4CB 1V0 CB AN input on RC2
+            adc->sample_ready = 0;
+            return adc->value; 
+            break;
+
+        case ADC_CHANNEL_AN20:      // rPICM4CB MKB1 AN input on RE0
+            adc->sample_ready = 0;
+            return adc->value; 
+            break;
+
+        case ADC_CHANNEL_AN23:      // rPICM4CB 12V0 CB AN input on RE3
+            adc->sample_ready = 0;
+            return adc->value; 
+            break;
+
+        case ADC_CHANNEL_AN24:      // rPICM4CB 5V0 CB AN input on RF6
+            adc->sample_ready = 0;
+            return adc->value; 
+            break;
+
+        case ADC_CHANNEL_AN25:      // rPICM4CB 3V3 CB AN input on RF7
+            adc->sample_ready = 0;
+            return adc->value; 
+            break;
+        
         default:
             return 0;
-            break;            
+            break;
     }
 }
 
-uint16_t ADC_get_eng_channel (STRUCT_ADC *adc)
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN0Interrupt(void)
 {
-    switch (adc->port)
-    {
-        case ADC_PORT_1:
-            switch(adc->channel)
-            {     
-                case ADC_CHANNEL_AN12:
-                    return ADC1BUF0;
-                    break;
-                case ADC_CHANNEL_AN13:
-                    return ADC1BUF1;
-                    break;
-                case ADC_CHANNEL_AN14:
-                    return ADC1BUF2;
-                    break;
-                case ADC_CHANNEL_AN15:
-                    return ADC1BUF3;
-                    break;            
-                default:
-                    return 0;
-                    break;
-            }
-            break;
-            
-        case ADC_PORT_2:
-            switch(adc->channel)
-            {     
-                case ADC_CHANNEL_AN0:
-                    return ADC2BUF0;
-                    break;
-                case ADC_CHANNEL_AN1:
-                    return ADC2BUF1;
-                    break;
-                case ADC_CHANNEL_AN2:
-                    return ADC2BUF2;
-                    break;         
-                default:
-                    return 0;
-                    break;
-            }
-            break;
-
-        default:
-            return 0;
-            break;            
-    }    
+    IFS5bits.ADCAN0IF = 0;
+    ADC_struct[ADC_CHANNEL_AN0].value = ADCBUF0;
+    ADC_struct[ADC_CHANNEL_AN0].sample_ready = 1;
 }
 
-
-void __attribute__((__interrupt__, no_auto_psv))_AD1Interrupt(void)
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN13Interrupt(void)
 {
-    IFS0bits.AD1IF = 0; 
-    adc1_sample_ready = ADC_SAMPLE_READY;
+    IFS6bits.ADCAN13IF = 0;
+    ADC_struct[ADC_CHANNEL_AN13].value = ADCBUF13;
+    ADC_struct[ADC_CHANNEL_AN13].sample_ready = 1;
 }
 
-void __attribute__((__interrupt__, no_auto_psv))_AD2Interrupt(void)
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN14Interrupt(void)
 {
-    IFS1bits.AD2IF = 0;
-    adc2_sample_ready = ADC_SAMPLE_READY;
+    IFS6bits.ADCAN14IF = 0;
+    ADC_struct[ADC_CHANNEL_AN14].value = ADCBUF14;
+    ADC_struct[ADC_CHANNEL_AN14].sample_ready = 1;
+}
+
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN20Interrupt(void)
+{
+    IFS6bits.ADCAN20IF = 0;
+    ADC_struct[ADC_CHANNEL_AN20].value = ADCBUF20;
+    ADC_struct[ADC_CHANNEL_AN20].sample_ready = 1;
+}
+
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN23Interrupt(void)
+{
+    IFS7bits.ADCAN23IF = 0;
+    ADC_struct[ADC_CHANNEL_AN23].value = ADCBUF23;
+    ADC_struct[ADC_CHANNEL_AN23].sample_ready = 1;
+}
+
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN24Interrupt(void)
+{
+    IFS12bits.ADCAN24IF = 0;
+    ADC_struct[ADC_CHANNEL_AN24].value = ADCBUF24;
+    ADC_struct[ADC_CHANNEL_AN24].sample_ready = 1;
+}
+
+void __attribute__((__interrupt__, no_auto_psv))_ADCAN25Interrupt(void)
+{
+    IFS12bits.ADCAN25IF = 0;
+    ADC_struct[ADC_CHANNEL_AN25].value = ADCBUF25;
+    ADC_struct[ADC_CHANNEL_AN25].sample_ready = 1;
 }

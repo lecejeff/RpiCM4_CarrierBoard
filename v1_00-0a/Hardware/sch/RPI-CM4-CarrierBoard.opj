@@ -292,19 +292,19 @@
       (Path "Logs")
       (Select "Design Resources"
          "c:\users\jeanf\desktop\git\rpicm4_carrierboard\v1_00-0a\hardware\sch\rpi-cm4-carrierboard.dsn"
-         "USB3" "USB HUB PCIE"))
+         "CODEC" "AUDIO CODEC"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 739"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 238 0 739"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1373 24 757")
-        (Scroll "1695 775")
-        (Zoom "150")
+        (Placement "44 0 1 -1 -1 5 24 5 1335 24 757")
+        (Scroll "169 212")
+        (Zoom "75")
         (Occurrence "/"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
@@ -313,7 +313,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1373 24 757")
+        (Placement "44 0 1 -1 -1 5 24 5 1335 24 757")
         (Scroll "0 544")
         (Zoom "132")
         (Occurrence "/RPI-CM4"))
@@ -324,7 +324,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1373 24 757")
+        (Placement "44 0 1 -1 -1 5 24 5 1335 24 757")
         (Scroll "2060 116")
         (Zoom "284")
         (Occurrence "/RPI_CM4"))
@@ -335,7 +335,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
         (Scroll "0 224")
         (Zoom "142")
         (Occurrence "/PSU"))
@@ -346,8 +346,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/MIPI-DSI"))
       (Path
@@ -357,7 +357,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
         (Scroll "0 53")
         (Zoom "100")
         (Occurrence "/Audio CODEC"))
@@ -368,8 +368,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/uSD"))
       (Path
@@ -379,8 +379,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/RESET"))
       (Path
@@ -390,7 +390,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
         (Scroll "0 259")
         (Zoom "100")
         (Occurrence "/dsPIC"))
@@ -401,7 +401,7 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
         (Scroll "0 72")
         (Zoom "100")
         (Occurrence "/USB HUB"))
@@ -412,18 +412,18 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/MOTOR1"))
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/MOTOR2"))
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/MOTOR3"))
       (Path
@@ -433,8 +433,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/CAN-FD"))
       (Path
@@ -444,13 +444,13 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/MikroBus1"))
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/MikroBus2"))
       (Path
@@ -460,8 +460,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/SERVO"))
       (Path
@@ -471,13 +471,23 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1373 24 757")
-        (Scroll "-183 0")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
         (Zoom "100")
         (Occurrence "/USB2"))
       (Path
          "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
       (Schematic "USB2")
-      (Page "USB MUX")))
+      (Page "USB MUX"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1335 24 757")
+        (Scroll "-164 0")
+        (Zoom "100"))
+      (Path
+         "C:\USERS\JEANF\DESKTOP\GIT\RPICM4_CARRIERBOARD\V1_00-0A\HARDWARE\SCH\RPI-CM4-CARRIERBOARD.DSN")
+      (Schematic "ANALOG INPUT")
+      (Page "AIN")))
   (MPSSessionName "jeanf")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_22.1\tools\capture\library"))

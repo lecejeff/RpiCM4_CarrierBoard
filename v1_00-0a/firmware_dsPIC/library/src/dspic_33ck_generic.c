@@ -19,7 +19,7 @@ STRUCT_LED LED_struct[LED_QTY];
 void dspic_init(void)
 { 
     //INTCON1bits.NSTDIS = 1;                         // Nested interrupt disabled# 
-    RCONbits.SWDTEN=0;                              // Watchdog timer disabled 
+    WDTCONLbits.ON = 0; // Disable SW WDT
     
     dspic_posc_20MHz_init();
     
