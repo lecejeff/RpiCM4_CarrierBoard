@@ -625,6 +625,10 @@
     [
       "0773b686-9329-480f-afb9-decb2d389d02",
       "USB_3"
+    ],
+    [
+      "e2b15d84-0407-4e36-9277-ffea8d1dbee5",
+      "Power Supply"
     ]
   ],
   "text_variables": {}
