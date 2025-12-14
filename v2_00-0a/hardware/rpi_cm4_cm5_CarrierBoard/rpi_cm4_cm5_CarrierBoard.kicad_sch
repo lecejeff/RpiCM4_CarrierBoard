@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "7dcdf741-90ca-4333-848c-806f4d64158e")
-	(paper "A3")
+	(paper "A4")
 	(title_block
 		(title "RPI CMx Carrier")
 		(date "2025-12-07")
@@ -18,28 +18,8 @@
 		(comment 8 "WIP")
 	)
 	(lib_symbols)
-	(bus
-		(pts
-			(xy 181.61 218.44) (xy 196.85 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10739dd3-d3e7-4bc8-ae23-befd53b6fad3")
-	)
-	(wire
-		(pts
-			(xy 181.61 222.25) (xy 196.85 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aa69347-3f58-4add-9900-2b19d78c38bb")
-	)
 	(sheet
-		(at 254 165.1)
+		(at 217.805 86.36)
 		(size 38.1 26.035)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -55,7 +35,7 @@
 		)
 		(uuid "0773b686-9329-480f-afb9-decb2d389d02")
 		(property "Sheetname" "USB_3"
-			(at 254 164.3884 0)
+			(at 217.805 85.6484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64,7 +44,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_3.kicad_sch"
-			(at 254 191.7196 0)
+			(at 217.805 112.9796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,7 +53,7 @@
 			)
 		)
 		(pin "CM5_USB_3_BUS" bidirectional
-			(at 254 169.545 180)
+			(at 217.805 90.805 180)
 			(uuid "b976ef00-532d-4506-ba81-4d42edf4eecb")
 			(effects
 				(font
@@ -82,8 +62,8 @@
 				(justify left)
 			)
 		)
-		(pin "PCIE_USB_HUB" bidirectional
-			(at 254 177.165 180)
+		(pin "PCIE_USB_HUB[0..8]" bidirectional
+			(at 217.805 98.425 180)
 			(uuid "2f9954d3-2056-48be-802c-47bcf6264d37")
 			(effects
 				(font
@@ -93,7 +73,7 @@
 			)
 		)
 		(pin "USB_HUB_~{RST}" input
-			(at 254 186.055 180)
+			(at 217.805 107.315 180)
 			(uuid "389811c3-9b6a-4e1c-b677-3561f95d167c")
 			(effects
 				(font
@@ -111,7 +91,141 @@
 		)
 	)
 	(sheet
-		(at 200.025 201.93)
+		(at 133.35 25.4)
+		(size 25.4 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "315811e7-ba6e-4f84-a73b-3e30fef30e7f")
+		(property "Sheetname" "CM4_CM5_CONN_B"
+			(at 133.35 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CM4_CM5_CONN_B.kicad_sch"
+			(at 133.35 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170.815 67.31)
+		(size 25.4 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8beee822-4832-4b71-87eb-d8b908112c5e")
+		(property "Sheetname" "DSI - LVDS bridge"
+			(at 170.815 66.5984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DSI_LVDS_bridge.kicad_sch"
+			(at 170.815 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SYS_~{RST}" input
+			(at 170.815 69.85 180)
+			(uuid "3fec9613-195e-4836-b84b-c4f2597644a5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MIPI-DSI[0..9]" bidirectional
+			(at 170.815 74.295 180)
+			(uuid "f3d438ec-03bc-47fb-b38a-385bba826cf0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C3[0..1]" bidirectional
+			(at 170.815 80.01 180)
+			(uuid "5465edee-d8d0-41f4-9f7b-5abc06ab9b5b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LVDS_A[0..9]" bidirectional
+			(at 196.215 71.755 0)
+			(uuid "61ed3721-521e-4cf6-8737-6301d5490e6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LVDS_B[0..9]" bidirectional
+			(at 196.215 77.47 0)
+			(uuid "59516da2-516f-4923-a6fb-8f3de922ed5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 166.37 117.475)
 		(size 25.4 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -126,7 +240,7 @@
 		)
 		(uuid "9c05f41d-8810-41e2-a7f9-3345c9f4f612")
 		(property "Sheetname" "RESET_SUPERVISOR"
-			(at 204.089 201.676 0)
+			(at 170.434 117.221 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -135,7 +249,7 @@
 			)
 		)
 		(property "Sheetfile" "RESET_SUPERVISOR.kicad_sch"
-			(at 197.231 206.375 0)
+			(at 163.576 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -144,7 +258,7 @@
 			)
 		)
 		(pin "EXT_~{RST}" input
-			(at 200.025 203.835 180)
+			(at 166.37 119.38 180)
 			(uuid "2d6f0cf6-9142-4c70-b40a-bdc01a195786")
 			(effects
 				(font
@@ -154,7 +268,7 @@
 			)
 		)
 		(pin "SYS_~{RST}" output
-			(at 225.425 203.835 0)
+			(at 191.77 119.38 0)
 			(uuid "c1c48314-dfe1-4474-9c86-aef6e07c6d23")
 			(effects
 				(font
@@ -172,7 +286,7 @@
 		)
 	)
 	(sheet
-		(at 196.85 215.9)
+		(at 71.12 133.35)
 		(size 28.575 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -187,7 +301,7 @@
 		)
 		(uuid "adbb075d-f33a-4d25-a8c5-71eb41bbcd81")
 		(property "Sheetname" "SD_CARD"
-			(at 205.613 215.392 0)
+			(at 79.883 132.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -196,7 +310,7 @@
 			)
 		)
 		(property "Sheetfile" "SD_CARD.kicad_sch"
-			(at 198.882 229.108 0)
+			(at 73.152 146.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -205,7 +319,7 @@
 			)
 		)
 		(pin "SDIO[0..5]" input
-			(at 196.85 218.44 180)
+			(at 71.12 135.89 180)
 			(uuid "6f518cc2-4e4b-4eca-b5db-610073d95e2d")
 			(effects
 				(font
@@ -215,7 +329,7 @@
 			)
 		)
 		(pin "SD_PWR_ON" input
-			(at 196.85 222.25 180)
+			(at 71.12 139.7 180)
 			(uuid "a3be3aa7-3f92-4822-960e-c29aaf594d6f")
 			(effects
 				(font
@@ -233,7 +347,163 @@
 		)
 	)
 	(sheet
-		(at 101.6 177.8)
+		(at 101.6 25.4)
+		(size 25.4 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b189385c-a3f2-4a0b-9ce6-a99cf7ff1f89")
+		(property "Sheetname" "CM4_CM5_CONN_A"
+			(at 101.6 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CM4_CM5_CONN_A.kicad_sch"
+			(at 101.6 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 131.445)
+		(size 20.955 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "da79d379-819b-4a23-bde6-cf0346f2b26a")
+		(property "Sheetname" "HDMI"
+			(at 128.27 130.7334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "HDMI.kicad_sch"
+			(at 128.27 143.4596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SYS_~{RST}" input
+			(at 128.27 133.985 180)
+			(uuid "881f6eef-51ae-464a-9d89-11d7ca6719f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HDMI0[0..11]" input
+			(at 128.27 139.7 180)
+			(uuid "1ecfae73-47f0-451c-9d08-25baa98143c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 203.2 127)
+		(size 19.685 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e21b738a-3a2f-4bb9-bc25-a1fb9158a2ab")
+		(property "Sheetname" "Ethernet"
+			(at 203.2 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Ethernet.kicad_sch"
+			(at 203.2 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ETH[0..10]" bidirectional
+			(at 203.2 133.35 180)
+			(uuid "3bd0e3ce-db89-4d60-8e88-741e51c26c3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 100.33)
 		(size 19.05 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -249,7 +519,7 @@
 		)
 		(uuid "e2b15d84-0407-4e36-9277-ffea8d1dbee5")
 		(property "Sheetname" "Power Supply"
-			(at 101.6 177.0884 0)
+			(at 123.19 99.6184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -258,12 +528,32 @@
 			)
 		)
 		(property "Sheetfile" "Power Supply.kicad_sch"
-			(at 101.6 191.0846 0)
+			(at 123.19 113.6146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "RUN_PG" input
+			(at 123.19 102.87 180)
+			(uuid "64987511-7d17-435c-8b7e-a2108fcd5110")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "POWER_KILL" input
+			(at 123.19 108.585 180)
+			(uuid "dac1157c-bea2-4a7a-9ef9-b421d8e94f86")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -306,46 +596,46 @@
 		(file
 			(name "Intellitrol_2025_A4.kicad_wks")
 			(type worksheet)
-			(data |KLUv/WCfEP0aACYkbiDwGD3QMfKBrbOx2DcoGlv3TNj98mV3EvRvWVgcnOtFBWMAXgBnABReV2uZ
-				BrUo+3P9z7LaRfU+51mE//E2wv/x2BxlX+vJVcT5jnsGKmHsz3fW5Nd6Bgple8p+f/IvAEak9y9C
-				zeJYtnOON7I646/Zr3sMmZTymnH2xfbLXioAAoIvZOJ0lbOhQp3wr42cMyr7X+ca1bH/kUB0tlSg
-				Ju24bVuUVwHwF3dk09kfHlnS6j/5b0/jRWdHijpl7tr+6iPvmP1mzL3XsaMV4rC3tXtvv/3z3V0S
-				zrWt/usiEeZijHD27O76nDGcg3CuIGCUEQwE473FUAqntDqLwTjo7uDuXg2s/irKuNPZR7UiLY6K
-				opKyl373z4VCbU4okAtE47BcbD9bckv/9ZxJjAi1GCmkHaXkrFffdufhrQ2IOWPU4NVaXDkwigbH
-				kblcICpCAYGBHtq/Ps4I7MERRJdwHo0UUWJ9TTU3NOzK6OGad3M3KwlIoLbu/Hrs5w0KL0xCWWAR
-				YlJih+xdprR7bv0wEJJSmmXyIGOkGXZRbM55QGSHDDNxSCQUxkf6+lTDIpzzggiJYuKIQB4BgLig
-				8UylmBmRkSRJMhxwRKTEyLYBjFlB4n96AGjASD8pKRbe7YrfAE6MBGKaVILQwRQKcMeQCtJsU552
-				KODZ85g3vOZGHgeQbCuY0XkQ1UkG3ePIDKy4ORoME1Sp028OoBQnCdNCjsDAUYXNRrs8m+hMVpL2
-				feDQgALKaQQwibUQ3AWzAE4pke6A1OBgyCmLXKVZA7KlAsDK3rtMNlkAd8MDuY0LXKVbh5TQNCMc
-				nUTA1MEvCmESLFiMNIwBVulhHoWlZjDmFHDdwUtlaQ3mCBJESMrE1L47yUJxO6S51jtpEEaDAn9+
-				WKHBYzjxQBgymCC1YWKOm2TrFypySgCC6tQ+6rXvs7OQ/3wDfOT8B1OArtWfij07E3gUbS+bcTwx
-				+wi8wmY130MQRmmIqRdNBWt+ctpTLpGvAbrU6A8CAvqz9AfVSt46gw9++yj3sAOBpBEWaaEz3/1A
-				37YGhz5BgHOrJqYBblmMA3lIcP50ZYCTgLFbDzqvHgS+mKVOxy/XbNlBatuSchkRQc7xiL2UXm1q
-				vo4P6yTAv4/4CPrJXgPSMehV|
+			(data |KLUv/WCZEBUbACZkbiDwGD3QMfKBrbOx2DcoGlv3TNh99mV3EvRvWVgcnOtFBWQAXgBnABReV2sI
+				DWpR9uf6n2W1i+p9zrMI/+NthP/jsTnKvtaTq4jzHfcMVMLYn++sya/1DBTK9pT9/uRfAIxI71+E
+				msWxbOccb2R1xl+zX/cYEFLKa8bZF9sve6kACAi+kInTVc6GCgGd8K+NnDMq+1/nGtWx/5FAdLZU
+				oCbtuG1blFcB8Bd3ZNPZHx5Z0uo/+W9P40VnR4o6Ze7a/uoj75j9Zsy917GjFeKwt7V7b7/9891d
+				Es61rf7rIhHmYoxw9uzu+pwx3ltMBqOMYCAYzkE4VyiFU1qdxWAcdHdwd68GVn8VZdzp7KNakRZH
+				RVFJ2Uu/++dCoTYnFMgFonFYLrafLbml/3rOJEaEWowU0o5Sctarb7vz8NaGbM4YNXi1FlcOjKLB
+				cWQuF4iKEAGBgR7avz7OGfbgSNYlnEcjRZRYX1PNDQ27EPRwzbu5m5UEJFBbd3499vMGhRcmoSyw
+				CDEpsUP2LlPaPbd+GJmklCIQ8iBjpAjsotic85BlBwRm4pBIKIyP9PWphkU45wUziWLiiEAeAYC4
+				oOFQpZgZkZEkSTIccESkxMi2AYxZQeJ8egBowEg/MSlW3q1K3wBOjARiGqpC6EAOCnDHhkppthlP
+				O+jv7HnMEz5zs48DSLYVmNFBENFJhqrjSAystDkaDBNEqctvjpQUNwnTQo7AwFGdzUb7PJvoTFeS
+				1n3YoQEBykkEUIh0QBAV2xAwSol1h6QGA0POWHKVJg3ILBUgU/beZbrJBpgbnshvXvAqXTqkjKYZ
+				4egmwqUO7gQhRWCXA2YghBn4KgRP43HULMbcAqo7dKYsrcHuQILXQ0EZ23erLdCpQ5ppvcNaQtRN
+				o4mHFQA8BhEPlCFDC5IbJuq4SbZyoSKnBEBQHe0jWPtqOwv0nzXAR/h/MAXomvoTsWFHAu+iLWcz
+				LiJmH4FX2KzmewjCKB0xeVGoaM1ETnvKJfJ1QIta/QFAQH+W+qCt0Fsn8MFvn+U6LEIgOcLKLXTm
+				ux/om9bg0CcKcGbVxDTgLYt1YA8bzp+uDHASMHbrQefVg8AXs9Tp+OWaLTtIbV1SLiMiyDkesZdS
+				rE3N1+9hnQT49xEfcT85aUA6Br0K|
 			)
-			(checksum "DF4A89332ECF681B1EF30234D36E439F")
+			(checksum "68DF2994812F00A35785ED6450499936")
 		)
 		(file
 			(name "Intellitrol_2025_A5.kicad_wks")
 			(type worksheet)
-			(data |KLUv/WCfEDUbAGbkbiDwGD3QMfKBrbOx2DcoGlv3TNj9q41yIau5sbA4ONeLCmQAXwBoAJHC62ot
-				06AWZX+u/1lWu6je5zyL8D/eRvg/Hpuj7Gs9uYo433HPQCWM/fnOmvxaz0ChbE/Z70/+BcCI9P5F
-				qFkcy3bO8UZWZ/w1+3WPIZNSXjPOvth+2UsFQEDwhUycrnI2VAgqQif8ayPnjMr+17lGdex/JBCd
-				LRWoSTtu2xblVQD8xR3ZdPaHR5a0+k/+29N40dmRok6Zu7a/+sg7Zr8Zc+917GiFOOxt7d7bb/98
-				d5eEc22r/7pIhLkYI5w9u7s+ZxHIg3MQzhUMRhnBQDDeWwylcEqrswgYB90d3N2rgdVfRRl3Ovuo
-				VqTFUVFUUvbS7/65UKjNCQVygWgclovtZ0tu6b+eM4kRoRYjhbSjlJz16tvuPLy1AZszRg1ercWV
-				A6NocByZywUSAYGBHtq/Ps4Y9uAI1iWcRyNFlIi+ppobGuLK6OGad3M3KwlIoLbu/Hrs5w0KL4SE
-				sogQIaVGs3eZ0u659cPADghKs0weMBmpzC6qXTKTsyeWyeyQYSYOiYTC+Ehfn2qICOe8ICZRTBwB
-				gLugIUWl1IzISJIkGQ5wRKTEyLYBjFlB4n96MNCASj+RFAvezYrcUE6MFGKaVIfQwRQKsMegGRUF
-				QJnztIMBzzbPecJrbutxUMq2ghlzDkadBPM9jtTAzgmjRmgzTKZKnOi7g1LbJ0whOQIDRxWbjXZ9
-				BtGZVpLLHZubAAooZxHAJNSC4BdmDdjGtDKQJRtdl0Ct6vMGDJ5VpcGs6KUrU9MdYDc8k9e0gKt0
-				dkgJTbOFw47JnXrNRREgwQLbSMMYYFUPs1E4NZsxVwHUHbpUFtdgjyDBhaRMYu27kywUt0Oia72U
-				BgE0KPCnhxUOPIYTD4whgwhSGybpuEm2fqEapwQgqC7tI177PjsL+c8zwEfOfzAF6Fr9mVixK4Gn
-				aIPZjOOJ2UfgFTar+R6CMEpDTL/oVLbmIac95RL9WkBHTf1hQUB7lvqgWclbx/BBbp9yHFYgkDTC
-				yi105rsf6NvX4NAnDHA21cQ0wJbFOLAHAOdaVy44SRi79aDz6kHgi1nqdPxyzZZdpLYtKZcROeTM
-				j9hL6dCm5uv6sE4C/PchH1E/GWlAOga9Cg==|
+			(data |KLUv/WCZEDUbAIZkbyEQlxsmHCQ5WoAaQszgAGrNb1JZVVp7JPYHvzYiAHoRoAFkAF8AaACyRstq
+				LdOiJmd/3j6sqvbQdr/zHML/mAPxezo2y9nXdvIW2jzHP0OdUbbnPUvyaz9DjbP9ZMMv+RcAoOg9
+				lFGrNpX1fPOBVWf8W/brHUM257SopH2xDbOPCoCAIASRNt7WWVAhKEIj/DdGztmU/a93beLYD0Wf
+				SnsmTLS25DhOTqsA+Is5syvtEIPVrPpL/txXaVXasppKubu2f3PQW2a/GXf/tWxZgTr8ce3f22/3
+				fHtXhPPWVf/1UAh3UspIm7Z3ndKQh+N7e8GinJDL49L5B2dKrZHOyrNXlINuDu7u1KDq30IZczo7
+				uFFmpUFJUE7W0u/usdSoUcnkYXlkGpWLbWhHXum/nrNoIaMmZY215Zyd/ba37X2YawNGqZRatFqT
+				qcYlwdg0MBbLIwGBoR7af3ucMdzBEKxHOINgQs6rL2nLDO2ysnqw6NVcTWoCECauPb8dGzqjRuuK
+				TBQyXnNqNbuXJ+2du3kW2OHSrFqzbB6wKevMrKtq1swmbYpl2SG7SBqRyGQRin77ql0yUmpFLJKQ
+				NAKAuaABSabUjMhIkiQZDnBEpMTItgGMWUHifnpI0IBKPyEpFt6tStxQTowEYtpUgdDBDgpgj6kZ
+				lQRAmfC0w/7ONs95wWdu4nEAybaCGTMPZp0EizqOhIGdEBaN0GaYTJS40HdXSW1JmEJyBAaOajab
+				7H0zoCZXMsZMAAeU0wigEmolyMWzAnwjWhj4ks1ddyBW9XnjB8+W0mBT9NaVWdMNEDfYXAV/9e4O
+				LrFpinDgMbmpWf0khA60gQYMkIYZwCoETKMwajZjrgKuO2ymLK7B7ECC2kNBG9t3qy3kqUPKab3Z
+				WkLUzdGEhxUePMYQD5whwwvSGybxuJRsdaHSpwQgqA7to1/7PjsL+c82wEfjfzAF6Fr9iVizO4F3
+				0dayGccTs4/Ai21WRz0EYZSemHpRqWTNQk57yiX6NYCeGvqDgoDuLP1Bs5K3jvDBbp/lOKwgkDTC
+				yi105rsf6FvX4NMnBjiXapI0gC2LdaAHCudaVy44CRO79aDz6kHgi1nqdPxyzZZdSG1BUgYjIshJ
+				HrGXUqtNzdfzYZ0E+O9DPuJ+ctGAdAx6FQ==|
 			)
-			(checksum "65A35A4A31263F0288966F548DADE3B5")
+			(checksum "73EEF5D45A1479040F25D65988DEF6D1")
 		)
 	)
 )

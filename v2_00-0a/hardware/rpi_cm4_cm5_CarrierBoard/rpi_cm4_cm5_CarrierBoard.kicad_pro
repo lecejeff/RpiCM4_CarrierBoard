@@ -597,7 +597,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "kicad-embed://Intellitrol_2025_A3.kicad_wks",
+    "page_layout_descr_file": "kicad-embed://Intellitrol_2025_A4.kicad_wks",
     "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
@@ -629,6 +629,26 @@
     [
       "e2b15d84-0407-4e36-9277-ffea8d1dbee5",
       "Power Supply"
+    ],
+    [
+      "8beee822-4832-4b71-87eb-d8b908112c5e",
+      "DSI - LVDS bridge"
+    ],
+    [
+      "da79d379-819b-4a23-bde6-cf0346f2b26a",
+      "HDMI"
+    ],
+    [
+      "e21b738a-3a2f-4bb9-bc25-a1fb9158a2ab",
+      "Ethernet"
+    ],
+    [
+      "b189385c-a3f2-4a0b-9ce6-a99cf7ff1f89",
+      "CM4_CM5_CONN_A"
+    ],
+    [
+      "315811e7-ba6e-4f84-a73b-3e30fef30e7f",
+      "CM4_CM5_CONN_B"
     ]
   ],
   "text_variables": {}

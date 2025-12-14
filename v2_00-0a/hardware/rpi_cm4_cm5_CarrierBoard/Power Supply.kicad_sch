@@ -7976,6 +7976,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 13.208 170.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be8bd6c0-5a7e-4886-96d2-235f3635c789")
+	)
 	(junction
 		(at 210.82 20.32)
 		(diameter 0)
