@@ -3063,6 +3063,9 @@
 			(embedded_fonts no)
 		)
 	)
+	(bus_alias "SDIO"
+		(members "SDIO_D0" "SDIO_D1" "SDIO_D2" "SDIO_D3" "SDIO_CLK" "SDIO_CMD")
+	)
 	(text "CM4lite"
 		(exclude_from_sim no)
 		(at 112.522 62.357 0)
@@ -4527,7 +4530,7 @@
 		)
 		(uuid "30f9f7e1-35c7-4760-ab96-9cc07f698623")
 	)
-	(hierarchical_label "SDIO[0..5]"
+	(hierarchical_label "{SDIO}"
 		(shape input)
 		(at 44.45 112.395 180)
 		(effects

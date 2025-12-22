@@ -1350,7 +1350,7 @@
 							)
 						)
 					)
-					(number "+"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2818,6 +2818,11 @@
 				)
 			)
 			(embedded_fonts no)
+		)
+	)
+	(bus_alias "HDMI0"
+		(members "HDMI_D0_P" "HDMI_D0_N" "HDMI_D1_P" "HDMI_D1_N" "HDMI_D2_P" "HDMI_D2_N"
+			"HDMI_CLK_P" "HDMI_CLK_N" "HDMI_SDA" "HDMI_SCL" "HDMI_CEC" "HDMI_HPD"
 		)
 	)
 	(junction
@@ -4390,7 +4395,7 @@
 		)
 		(uuid "f9c35be5-857f-41b3-8e82-11799105666c")
 	)
-	(label "HDMI0.D0_N"
+	(label "HDMI_D0_N"
 		(at 114.3 69.215 0)
 		(effects
 			(font
@@ -4400,7 +4405,7 @@
 		)
 		(uuid "17ba443d-3d23-41c3-b264-61d46e2cee66")
 	)
-	(label "HDMI0.CEC"
+	(label "HDMI_CEC"
 		(at 114.3 97.79 0)
 		(effects
 			(font
@@ -4410,7 +4415,7 @@
 		)
 		(uuid "27a430a3-c51c-4068-9c10-e0835d2c03c7")
 	)
-	(label "HDMI0.HPD"
+	(label "HDMI_HPD"
 		(at 114.3 100.33 0)
 		(effects
 			(font
@@ -4420,7 +4425,7 @@
 		)
 		(uuid "3f53c37b-002f-41bf-a448-beb496c68415")
 	)
-	(label "HDMI0.SCL"
+	(label "HDMI_SCL"
 		(at 114.3 92.71 0)
 		(effects
 			(font
@@ -4430,7 +4435,7 @@
 		)
 		(uuid "497af51f-9199-4195-ae20-9703838fb7f8")
 	)
-	(label "HDMI0.CLK_P"
+	(label "HDMI_CLK_P"
 		(at 114.3 87.63 0)
 		(effects
 			(font
@@ -4440,7 +4445,7 @@
 		)
 		(uuid "6d8dfd70-d06a-4d7d-aaf2-4d0f38fddf2d")
 	)
-	(label "HDMI0.SDA"
+	(label "HDMI_SDA"
 		(at 114.3 95.25 0)
 		(effects
 			(font
@@ -4450,7 +4455,7 @@
 		)
 		(uuid "7e17c599-2554-49de-98b3-a40934078aa7")
 	)
-	(label "HDMI0.D0_P"
+	(label "HDMI_D0_P"
 		(at 114.3 66.675 0)
 		(effects
 			(font
@@ -4470,7 +4475,7 @@
 		)
 		(uuid "94ffae86-c514-45d3-a425-d8b660a9b5e3")
 	)
-	(label "HDMI0.D1_P"
+	(label "HDMI_D1_P"
 		(at 114.3 61.595 0)
 		(effects
 			(font
@@ -4480,7 +4485,7 @@
 		)
 		(uuid "b09a3c75-bb25-4e02-a29b-227b29bc58f2")
 	)
-	(label "HDMI0.D2_P"
+	(label "HDMI_D2_P"
 		(at 114.3 56.515 0)
 		(effects
 			(font
@@ -4490,7 +4495,7 @@
 		)
 		(uuid "b66352ef-c008-45c7-b6bc-94fd86c35d9a")
 	)
-	(label "HDMI0.CLK_N"
+	(label "HDMI_CLK_N"
 		(at 114.3 90.17 0)
 		(effects
 			(font
@@ -4500,7 +4505,7 @@
 		)
 		(uuid "c35e8dfa-f9e5-423c-ab74-60809da8eadc")
 	)
-	(label "HDMI0.D1_N"
+	(label "HDMI_D1_N"
 		(at 114.3 64.135 0)
 		(effects
 			(font
@@ -4510,7 +4515,7 @@
 		)
 		(uuid "d8c314d9-12ff-4094-98e9-614d94c2d18f")
 	)
-	(label "HDMI0.D2_N"
+	(label "HDMI_D2_N"
 		(at 114.3 59.055 0)
 		(effects
 			(font
@@ -4531,7 +4536,7 @@
 		)
 		(uuid "5c41e5d1-3ead-4a5f-905e-a0542ab8d12d")
 	)
-	(hierarchical_label "HDMI0[0..11]"
+	(hierarchical_label "{HDMI0}"
 		(shape input)
 		(at 76.2 50.8 180)
 		(effects
@@ -4745,8 +4750,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "4ddf077b-b3a8-4fb3-acbc-11e67b59f2b7")
-		(property "Reference" "U?"
+		(uuid "48b607cc-a3f3-456d-aca9-9bb6d4595de9")
+		(property "Reference" "U18"
 			(at 135.763 115.062 0)
 			(effects
 				(font
@@ -4930,7 +4935,7 @@
 		(instances
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
-					(reference "U?")
+					(reference "U18")
 					(unit 1)
 				)
 			)
@@ -5101,239 +5106,6 @@
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
 					(reference "C93")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KicadCompDb:ESD Diodes/ESD_DIODE_00001")
-		(at 196.215 52.705 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "52386917-d274-4d09-a107-208ea53492cb")
-		(property "Reference" "D?"
-			(at 197.485 51.689 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESD7016MUTAG"
-			(at 192.405 79.375 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "footprint:UDFN8"
-			(at 196.215 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd7016-d.pdf"
-			(at 196.215 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "TVS DIODE 5VWM 10VC 8UDFN"
-			(at 196.215 53.975 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "ESD TVS SEXT SMT"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "V(r)" "5V"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "V(br)" "5.5V"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "V(cl)" "10V"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "I(pp)" "1A"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power" "NA"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Capacitance" "0.15pF"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" "-55°C ~ 125°C"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "8-UDFN"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dimensions" "3.30mm x 1.00mm"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "onsemi"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "ESD7016MUTAG"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "ESD7016MUTAGOSCT-ND"
-			(at 196.215 52.705 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa00d2bd-1797-42a0-9ced-b6819157d1d7")
-		)
-		(pin "5"
-			(uuid "8d190eb0-9eda-460f-bd99-6b3ae19b704f")
-		)
-		(pin "7"
-			(uuid "989124c0-4556-48b8-9885-fd1f943cb197")
-		)
-		(pin "2"
-			(uuid "b9dd7bdd-2b0b-4e0f-a289-99c2b619ea14")
-		)
-		(pin "4"
-			(uuid "f1875fab-0942-411e-a7f5-7bfac2965281")
-		)
-		(pin "3"
-			(uuid "295df24d-fdda-4388-bc9c-64892d67b911")
-		)
-		(pin "9"
-			(uuid "c618e131-730c-440d-a920-f607ec6dad85")
-		)
-		(pin "8"
-			(uuid "56a91921-0381-40ec-b48c-4c78ec81e051")
-		)
-		(pin "6"
-			(uuid "14703227-22e1-4961-91d7-b6f19faad0ed")
-		)
-		(pin "10"
-			(uuid "dfb19282-f5b2-4885-b2e1-ec186fd255e0")
-		)
-		(instances
-			(project "rpi_cm4_cm5_CarrierBoard"
-				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
-					(reference "D?")
 					(unit 1)
 				)
 			)
@@ -6302,7 +6074,7 @@
 		(pin "11"
 			(uuid "5f3908ea-f27d-4b2e-b9e7-9cd12b4230e3")
 		)
-		(pin "+"
+		(pin "6"
 			(uuid "9cb4b782-cf7f-4888-858a-b1207555e22a")
 		)
 		(pin "12"
@@ -7324,6 +7096,239 @@
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
 					(reference "C92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KicadCompDb:ESD Diodes/ESD_DIODE_00001")
+		(at 196.215 52.705 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e006136e-54eb-4a79-822b-b655458208db")
+		(property "Reference" "D15"
+			(at 197.485 51.689 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESD7016MUTAG"
+			(at 192.405 79.375 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footprint:UDFN8"
+			(at 196.215 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/esd7016-d.pdf"
+			(at 196.215 52.705 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "TVS DIODE 5VWM 10VC 8UDFN"
+			(at 196.215 53.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "ESD TVS SEXT SMT"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V(r)" "5V"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V(br)" "5.5V"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "V(cl)" "10V"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I(pp)" "1A"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "NA"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Capacitance" "0.15pF"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature" "-55°C ~ 125°C"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "8-UDFN"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dimensions" "3.30mm x 1.00mm"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "onsemi"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "ESD7016MUTAG"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "ESD7016MUTAGOSCT-ND"
+			(at 196.215 52.705 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa00d2bd-1797-42a0-9ced-b6819157d1d7")
+		)
+		(pin "5"
+			(uuid "8d190eb0-9eda-460f-bd99-6b3ae19b704f")
+		)
+		(pin "7"
+			(uuid "989124c0-4556-48b8-9885-fd1f943cb197")
+		)
+		(pin "2"
+			(uuid "b9dd7bdd-2b0b-4e0f-a289-99c2b619ea14")
+		)
+		(pin "4"
+			(uuid "f1875fab-0942-411e-a7f5-7bfac2965281")
+		)
+		(pin "3"
+			(uuid "295df24d-fdda-4388-bc9c-64892d67b911")
+		)
+		(pin "9"
+			(uuid "c618e131-730c-440d-a920-f607ec6dad85")
+		)
+		(pin "8"
+			(uuid "56a91921-0381-40ec-b48c-4c78ec81e051")
+		)
+		(pin "6"
+			(uuid "14703227-22e1-4961-91d7-b6f19faad0ed")
+		)
+		(pin "10"
+			(uuid "dfb19282-f5b2-4885-b2e1-ec186fd255e0")
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
+					(reference "D15")
 					(unit 1)
 				)
 			)
