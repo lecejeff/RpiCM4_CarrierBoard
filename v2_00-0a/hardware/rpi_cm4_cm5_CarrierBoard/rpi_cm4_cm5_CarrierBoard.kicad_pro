@@ -494,7 +494,7 @@
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "kicad-embed://Intellitrol_2025_A4.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -649,6 +649,10 @@
     [
       "315811e7-ba6e-4f84-a73b-3e30fef30e7f",
       "CM4_CM5_CONN_B"
+    ],
+    [
+      "81b87d3e-2b5e-4732-a375-f337eeb3ec3b",
+      "Power_Input"
     ]
   ],
   "text_variables": {}

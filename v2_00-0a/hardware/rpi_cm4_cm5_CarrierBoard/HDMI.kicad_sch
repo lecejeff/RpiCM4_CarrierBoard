@@ -673,7 +673,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KicadCompDb:Capacitors/CAP_CER_SMT_00004"
+		(symbol "KicadCompDb:Capacitors/CAP_CER_SMT_00011"
 			(pin_numbers
 				(hide yes)
 			)
@@ -692,7 +692,7 @@
 					)
 				)
 			)
-			(property "Value" "10u"
+			(property "Value" "22u"
 				(at 1.524 -1.524 0)
 				(effects
 					(font
@@ -709,7 +709,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL21A106KOQNNNE_Spec.pdf"
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/339/CL21A226MAYNNNE_Spec.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -718,7 +718,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "CAP CER 10UF 16V X5R 0805"
+			(property "Description" "CAP CER 22UF 25V X5R 0805"
 				(at 1.778 -9.906 0)
 				(effects
 					(font
@@ -727,7 +727,7 @@
 					(hide yes)
 				)
 			)
-			(property "Tolerance" "±10%"
+			(property "Tolerance" "±20%"
 				(at 0.254 -20.32 0)
 				(effects
 					(font
@@ -762,7 +762,7 @@
 					(hide yes)
 				)
 			)
-			(property "Voltage Rating" "16V"
+			(property "Voltage Rating" "25V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -779,7 +779,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part Number" "CL21A106KOQNNNE"
+			(property "Manufacturer Part Number" "CL21A226MAYNNNE"
 				(at 0.254 -7.874 0)
 				(effects
 					(font
@@ -797,7 +797,7 @@
 					(hide yes)
 				)
 			)
-			(property "Distributor Part Number" "1276-1096-1-ND"
+			(property "Distributor Part Number" "1276-CL21A226MAYNNNECT-ND"
 				(at 0.762 -12.192 0)
 				(effects
 					(font
@@ -835,7 +835,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Capacitors/CAP_CER_SMT_00004_1_1"
+			(symbol "Capacitors/CAP_CER_SMT_00011_1_1"
 				(polyline
 					(pts
 						(xy 2.159 0.889) (xy 2.159 -0.889)
@@ -4942,176 +4942,6 @@
 		)
 	)
 	(symbol
-		(lib_id "KicadCompDb:Capacitors/CAP_CER_SMT_00004")
-		(at 156.21 123.825 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e781bb1-d570-485c-a205-c9ae17ed0bf5")
-		(property "Reference" "C93"
-			(at 157.48 119.507 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10u"
-			(at 157.48 121.285 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "footprint:CAP_NONPOL_0805"
-			(at 178.308 123.317 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL21A106KOQNNNE_Spec.pdf"
-			(at 156.21 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CAP CER 10UF 16V X5R 0805"
-			(at 166.116 122.047 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "±10%"
-			(at 176.53 123.571 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dielectric" "X5R"
-			(at 170.434 123.571 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0805"
-			(at 157.48 125.095 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Operating Temperature" "-55°C ~ 85°C"
-			(at 180.594 123.063 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rating" "16V"
-			(at 157.48 123.317 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 174.498 123.571 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "CL21A106KOQNNNE"
-			(at 164.084 123.571 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 162.052 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "1276-1096-1-ND"
-			(at 168.402 123.063 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "CER SMT"
-			(at 156.21 123.825 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dimensions" "2.00mm x 1.25mm"
-			(at 156.21 123.825 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0d7874f5-956e-457f-8ac1-916095421767")
-		)
-		(pin "1"
-			(uuid "5643e76e-29e7-4d5c-a2f9-7e4337770be8")
-		)
-		(instances
-			(project "rpi_cm4_cm5_CarrierBoard"
-				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
-					(reference "C93")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "KiCad_Pwr_Symbols:GND")
 		(at 189.865 108.585 0)
 		(unit 1)
@@ -6352,6 +6182,176 @@
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
 					(reference "#PWR0149")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KicadCompDb:Capacitors/CAP_CER_SMT_00011")
+		(at 156.21 123.825 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8ce1a76-0802-4f2e-9dd7-baff8d10ce3f")
+		(property "Reference" "C93"
+			(at 157.226 118.872 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "22u"
+			(at 157.226 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprint:CAP_NONPOL_0805"
+			(at 178.308 123.317 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/339/CL21A226MAYNNNE_Spec.pdf"
+			(at 156.21 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 22UF 25V X5R 0805"
+			(at 166.116 122.047 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±20%"
+			(at 176.53 123.571 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 170.434 123.571 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 157.226 122.428 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Operating Temperature" "-55°C ~ 85°C"
+			(at 180.594 123.063 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage Rating" "25V"
+			(at 157.226 124.206 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 174.498 123.571 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "CL21A226MAYNNNE"
+			(at 164.084 123.571 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 162.052 123.825 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "1276-CL21A226MAYNNNECT-ND"
+			(at 168.402 123.063 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "CER SMT"
+			(at 156.21 123.825 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dimensions" "2.00mm x 1.25mm"
+			(at 156.21 123.825 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d496cae6-9c6b-4c65-94c5-5810935b6c01")
+		)
+		(pin "2"
+			(uuid "57e28967-504c-4326-a9c7-632aed262c42")
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/da79d379-819b-4a23-bde6-cf0346f2b26a"
+					(reference "C93")
 					(unit 1)
 				)
 			)

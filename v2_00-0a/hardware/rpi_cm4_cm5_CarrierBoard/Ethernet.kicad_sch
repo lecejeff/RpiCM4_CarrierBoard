@@ -5001,6 +5001,26 @@
 		)
 		(uuid "ff682c91-008c-45de-9e6f-4eb2e762619b")
 	)
+	(label "ETH_~{LED1}"
+		(at 107.95 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1a7a3aa5-6ccf-4020-9763-a1559ffb33cf")
+	)
+	(label "ETH_~{LED3}"
+		(at 107.95 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36dce9c5-c637-465e-8f93-7525700f98a3")
+	)
 	(label "ETH_P1_N"
 		(at 107.95 69.85 0)
 		(effects
@@ -5011,7 +5031,7 @@
 		)
 		(uuid "3c98e6fe-ff74-4a2d-ab01-47bc39e4336e")
 	)
-	(label "ETH_NLED3"
+	(label "ETH_~{LED3}"
 		(at 175.895 105.41 0)
 		(effects
 			(font
@@ -5021,7 +5041,7 @@
 		)
 		(uuid "42e7311f-e0ec-4acd-b9ef-13d37b039bad")
 	)
-	(label "ETH_NLED1"
+	(label "ETH_~{LED1}"
 		(at 175.895 107.95 0)
 		(effects
 			(font
@@ -5050,16 +5070,6 @@
 			(justify left bottom)
 		)
 		(uuid "91d4987c-b7a5-4692-9efe-9d1a1b2c6ebd")
-	)
-	(label "ETH_NLED1"
-		(at 107.95 102.87 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "97c8ea35-b0e7-496b-9881-39ac65999a02")
 	)
 	(label "ETH_P3_N"
 		(at 107.9031 95.25 0)
@@ -5091,7 +5101,7 @@
 		)
 		(uuid "c3072b04-b0aa-4852-8ca4-e605598fc6d7")
 	)
-	(label "ETH_NLED2"
+	(label "ETH_~{LED2}"
 		(at 175.895 100.33 0)
 		(effects
 			(font
@@ -5100,16 +5110,6 @@
 			(justify left bottom)
 		)
 		(uuid "c31a0e7e-a91d-4554-ae1f-60d6cec7e71a")
-	)
-	(label "ETH_NLED3"
-		(at 107.95 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e5f2863f-ac44-43fa-8dbe-2986fea2f9f5")
 	)
 	(label "ETH_P2_N"
 		(at 107.95 74.93 0)
@@ -5121,7 +5121,7 @@
 		)
 		(uuid "eaf0195f-c570-4cca-99fb-710afb91be26")
 	)
-	(label "ETH_NLED2"
+	(label "ETH_~{LED2}"
 		(at 107.95 97.79 0)
 		(effects
 			(font

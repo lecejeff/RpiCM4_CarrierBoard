@@ -2449,7 +2449,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "MT"
+			(property "Reference" "MTG"
 				(at 1.27 1.27 0)
 				(effects
 					(font
@@ -2672,152 +2672,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KicadCompDb:Miscellaneous/MISC_00004"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "MT"
-				(at 1.27 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "M0504-25-AL-7"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprint:M0504-25-AL-7"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://dpk3n3gg92jwt.cloudfront.net/domains/raf/pdf/RAF_catalog_0282.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "ROUND SPACER M2.5 ALUMINUM 5MM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Type" "ROUND SPACER M2.5 ALUMINUM 5MM"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Operating Temperature" "-40°C ~ 150°C"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Dimensions" "4.50mm x 5.00mm"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "RAF Electronic Hardware"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part Number" "M0504-25-AL-7"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Distributor" "DigiKey"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Distributor Part Number" "1772-M0504-25-AL-7-ND"
-				(at 0 0 0)
-				(show_name)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "footprint:M0504-25-AL-7"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Miscellaneous/MISC_00004_0_1"
-				(rectangle
-					(start 0 0)
-					(end 2.54 -3.175)
-					(stroke
-						(width 0)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(wire
 		(pts
-			(xy 139.7 186.69) (xy 139.7 188.595)
+			(xy 144.145 177.8) (xy 144.145 179.705)
 		)
 		(stroke
 			(width 0)
@@ -2827,7 +2685,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 186.69) (xy 134.62 188.595)
+			(xy 139.065 177.8) (xy 139.065 179.705)
 		)
 		(stroke
 			(width 0)
@@ -2837,7 +2695,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 186.69) (xy 124.46 188.595)
+			(xy 128.905 177.8) (xy 128.905 179.705)
 		)
 		(stroke
 			(width 0)
@@ -2847,7 +2705,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 186.69) (xy 129.54 188.595)
+			(xy 133.985 177.8) (xy 133.985 179.705)
 		)
 		(stroke
 			(width 0)
@@ -2856,142 +2714,8 @@
 		(uuid "fb25def6-b625-4d42-a658-5dce62c77862")
 	)
 	(symbol
-		(lib_id "KicadCompDb:Miscellaneous/MISC_00004")
-		(at 143.51 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1cc9348e-4ca0-4f2e-82c4-10e830e97228")
-		(property "Reference" "MT7"
-			(at 143.002 187.071 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M0504-25-AL-7"
-			(at 147.32 190.8174 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "footprint:M0504-25-AL-7"
-			(at 143.51 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dpk3n3gg92jwt.cloudfront.net/domains/raf/pdf/RAF_catalog_0282.pdf"
-			(at 143.51 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 143.51 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dimensions" "4.50mm x 5.00mm"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "RAF Electronic Hardware"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "M0504-25-AL-7"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "1772-M0504-25-AL-7-ND"
-			(at 143.51 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "rpi_cm4_cm5_CarrierBoard"
-				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "KiCad_Pwr_Symbols:GND")
-		(at 124.46 188.595 0)
+		(at 128.905 179.705 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2999,7 +2723,7 @@
 		(dnp no)
 		(uuid "1f5a8083-6290-47e4-9ade-e3e9191416f5")
 		(property "Reference" "#PWR0171"
-			(at 124.46 194.945 0)
+			(at 128.905 186.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +2732,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 124.333 192.024 0)
+			(at 128.778 183.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,7 +2740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 188.595 0)
+			(at 128.905 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3025,7 +2749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 188.595 0)
+			(at 128.905 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3034,7 +2758,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 124.46 188.595 0)
+			(at 128.905 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3056,7 +2780,7 @@
 	)
 	(symbol
 		(lib_id "KiCad_Lib_Symbols:RPI_CMx_PCB_FP")
-		(at 155.575 179.705 0)
+		(at 158.75 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3064,7 +2788,7 @@
 		(dnp no)
 		(uuid "27693e28-8469-4787-88a3-f751561912bb")
 		(property "Reference" "ITEM1"
-			(at 159.004 178.562 0)
+			(at 162.179 171.577 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +2797,7 @@
 			)
 		)
 		(property "Value" "Raspberry PI CM4 and CM5 symbol"
-			(at 180.975 307.975 0)
+			(at 184.15 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,7 +2806,7 @@
 			)
 		)
 		(property "Footprint" "rPI_CM4_CM5"
-			(at 155.575 179.705 0)
+			(at 158.75 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,7 +2815,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 155.575 179.705 0)
+			(at 158.75 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3100,7 +2824,7 @@
 			)
 		)
 		(property "Description" "Raspberry PI CM4 and CM5 symbol"
-			(at 155.575 179.705 0)
+			(at 158.75 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3119,7 +2843,7 @@
 	)
 	(symbol
 		(lib_id "KiCad_Pwr_Symbols:GND")
-		(at 134.62 188.595 0)
+		(at 139.065 179.705 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3127,7 +2851,7 @@
 		(dnp no)
 		(uuid "49ed002a-b404-4a10-bcec-90e3b9c29799")
 		(property "Reference" "#PWR0173"
-			(at 134.62 194.945 0)
+			(at 139.065 186.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,7 +2860,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.493 192.024 0)
+			(at 138.938 183.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,7 +2868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 188.595 0)
+			(at 139.065 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3153,7 +2877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 188.595 0)
+			(at 139.065 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3162,7 +2886,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 188.595 0)
+			(at 139.065 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3184,7 +2908,7 @@
 	)
 	(symbol
 		(lib_id "KiCad_Pwr_Symbols:GND")
-		(at 139.7 188.595 0)
+		(at 144.145 179.705 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3192,7 +2916,7 @@
 		(dnp no)
 		(uuid "58c48d64-a65f-4d19-86e7-e9b043453af6")
 		(property "Reference" "#PWR0174"
-			(at 139.7 194.945 0)
+			(at 144.145 186.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3201,7 +2925,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.573 192.024 0)
+			(at 144.018 183.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3209,7 +2933,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 188.595 0)
+			(at 144.145 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3218,7 +2942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 188.595 0)
+			(at 144.145 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3227,7 +2951,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 188.595 0)
+			(at 144.145 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,15 +2973,15 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Miscellaneous/MISC_00002")
-		(at 133.35 182.245 0)
+		(at 137.795 173.355 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "59bd7de6-902d-411c-bab3-36f3f8142855")
-		(property "Reference" "MT3"
-			(at 132.842 181.356 0)
+		(property "Reference" "MTG3"
+			(at 136.271 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3266,7 +2990,7 @@
 			)
 		)
 		(property "Value" "9774030151R"
-			(at 128.016 181.356 0)
+			(at 132.461 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3000,7 @@
 			)
 		)
 		(property "Footprint" "footprint:9774030151R"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,7 +3009,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774030151R.pdf"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3294,7 +3018,7 @@
 			)
 		)
 		(property "Description" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3303,7 +3027,7 @@
 			)
 		)
 		(property "Type" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3313,7 +3037,7 @@
 			)
 		)
 		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3323,7 +3047,7 @@
 			)
 		)
 		(property "Dimensions" "5.10mm x 3.00mm x 4.39mm"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3333,7 +3057,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3343,7 +3067,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "9774030151R"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3353,7 +3077,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3363,7 +3087,7 @@
 			)
 		)
 		(property "Distributor Part Number" "732-7083-1-ND"
-			(at 133.35 182.245 0)
+			(at 137.795 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3378,7 +3102,7 @@
 		(instances
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT3")
+					(reference "MTG3")
 					(unit 1)
 				)
 			)
@@ -3386,7 +3110,7 @@
 	)
 	(symbol
 		(lib_id "KiCad_Pwr_Symbols:GND")
-		(at 129.54 188.595 0)
+		(at 133.985 179.705 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3394,7 +3118,7 @@
 		(dnp no)
 		(uuid "622abcba-9034-449a-9d51-0ab3f7e37047")
 		(property "Reference" "#PWR0172"
-			(at 129.54 194.945 0)
+			(at 133.985 186.055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +3127,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.413 192.024 0)
+			(at 133.858 183.134 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3411,7 +3135,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 188.595 0)
+			(at 133.985 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +3144,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 188.595 0)
+			(at 133.985 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3429,7 +3153,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 188.595 0)
+			(at 133.985 179.705 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3451,15 +3175,15 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Miscellaneous/MISC_00002")
-		(at 128.27 182.245 0)
+		(at 132.715 173.355 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "67ed4b70-ad27-44de-90b7-1add1603506c")
-		(property "Reference" "MT2"
-			(at 127.762 181.356 0)
+		(property "Reference" "MTG2"
+			(at 131.191 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3468,7 +3192,7 @@
 			)
 		)
 		(property "Value" "9774030151R"
-			(at 122.936 181.356 0)
+			(at 127.381 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3478,7 +3202,7 @@
 			)
 		)
 		(property "Footprint" "footprint:9774030151R"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3487,7 +3211,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774030151R.pdf"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3496,7 +3220,7 @@
 			)
 		)
 		(property "Description" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3505,7 +3229,7 @@
 			)
 		)
 		(property "Type" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3515,7 +3239,7 @@
 			)
 		)
 		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3525,7 +3249,7 @@
 			)
 		)
 		(property "Dimensions" "5.10mm x 3.00mm x 4.39mm"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3535,7 +3259,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3545,7 +3269,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "9774030151R"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3555,7 +3279,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3565,7 +3289,7 @@
 			)
 		)
 		(property "Distributor Part Number" "732-7083-1-ND"
-			(at 128.27 182.245 0)
+			(at 132.715 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -3580,409 +3304,7 @@
 		(instances
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KicadCompDb:Miscellaneous/MISC_00004")
-		(at 148.59 187.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7159f9c2-2260-4ced-9d7d-6998ed02c6f5")
-		(property "Reference" "MT8"
-			(at 148.082 187.071 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M0504-25-AL-7"
-			(at 152.4 190.8174 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "footprint:M0504-25-AL-7"
-			(at 148.59 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dpk3n3gg92jwt.cloudfront.net/domains/raf/pdf/RAF_catalog_0282.pdf"
-			(at 148.59 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 148.59 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dimensions" "4.50mm x 5.00mm"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "RAF Electronic Hardware"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "M0504-25-AL-7"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "1772-M0504-25-AL-7-ND"
-			(at 148.59 187.96 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "rpi_cm4_cm5_CarrierBoard"
-				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KicadCompDb:Miscellaneous/MISC_00004")
-		(at 148.59 182.245 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7c314e6a-6f9d-4bf3-8f60-4c13f80e87fa")
-		(property "Reference" "MT6"
-			(at 148.082 181.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M0504-25-AL-7"
-			(at 152.4 185.1024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "footprint:M0504-25-AL-7"
-			(at 148.59 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dpk3n3gg92jwt.cloudfront.net/domains/raf/pdf/RAF_catalog_0282.pdf"
-			(at 148.59 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 148.59 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dimensions" "4.50mm x 5.00mm"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "RAF Electronic Hardware"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "M0504-25-AL-7"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "1772-M0504-25-AL-7-ND"
-			(at 148.59 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "rpi_cm4_cm5_CarrierBoard"
-				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "KicadCompDb:Miscellaneous/MISC_00004")
-		(at 143.51 182.245 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "92579f7e-56fb-4921-910b-3c5f5ef4488e")
-		(property "Reference" "MT5"
-			(at 143.002 181.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M0504-25-AL-7"
-			(at 147.32 185.1024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "footprint:M0504-25-AL-7"
-			(at 143.51 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://dpk3n3gg92jwt.cloudfront.net/domains/raf/pdf/RAF_catalog_0282.pdf"
-			(at 143.51 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 143.51 182.245 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "ROUND SPACER M2.5 ALUMINUM 5MM"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Dimensions" "4.50mm x 5.00mm"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "RAF Electronic Hardware"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part Number" "M0504-25-AL-7"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor" "DigiKey"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distributor Part Number" "1772-M0504-25-AL-7-ND"
-			(at 143.51 182.245 0)
-			(show_name yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project ""
-				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT5")
+					(reference "MTG2")
 					(unit 1)
 				)
 			)
@@ -3990,15 +3312,15 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Miscellaneous/MISC_00002")
-		(at 123.19 182.245 0)
+		(at 127.635 173.355 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "af647da6-e3d4-4df7-8925-f83081c09b26")
-		(property "Reference" "MT1"
-			(at 122.682 181.356 0)
+		(property "Reference" "MTG1"
+			(at 126.111 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4007,7 +3329,7 @@
 			)
 		)
 		(property "Value" "9774030151R"
-			(at 117.856 181.356 0)
+			(at 122.301 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,7 +3339,7 @@
 			)
 		)
 		(property "Footprint" "footprint:9774030151R"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4026,7 +3348,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774030151R.pdf"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4035,7 +3357,7 @@
 			)
 		)
 		(property "Description" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4044,7 +3366,7 @@
 			)
 		)
 		(property "Type" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4054,7 +3376,7 @@
 			)
 		)
 		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4064,7 +3386,7 @@
 			)
 		)
 		(property "Dimensions" "5.10mm x 3.00mm x 4.39mm"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4074,7 +3396,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4084,7 +3406,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "9774030151R"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4094,7 +3416,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4104,7 +3426,7 @@
 			)
 		)
 		(property "Distributor Part Number" "732-7083-1-ND"
-			(at 123.19 182.245 0)
+			(at 127.635 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4119,7 +3441,7 @@
 		(instances
 			(project ""
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT1")
+					(reference "MTG1")
 					(unit 1)
 				)
 			)
@@ -4127,15 +3449,15 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Miscellaneous/MISC_00002")
-		(at 138.43 182.245 0)
+		(at 142.875 173.355 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "cc97ef2f-8f98-4abb-9d89-7548990b833c")
-		(property "Reference" "MT4"
-			(at 137.922 181.356 0)
+		(property "Reference" "MTG4"
+			(at 141.605 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,7 +3466,7 @@
 			)
 		)
 		(property "Value" "9774030151R"
-			(at 133.096 181.356 0)
+			(at 137.541 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4154,7 +3476,7 @@
 			)
 		)
 		(property "Footprint" "footprint:9774030151R"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4163,7 +3485,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/9774030151R.pdf"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4172,7 +3494,7 @@
 			)
 		)
 		(property "Description" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4181,7 +3503,7 @@
 			)
 		)
 		(property "Type" "RND STANDOFF M2.5X0.45 STEEL 3MM"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4191,7 +3513,7 @@
 			)
 		)
 		(property "Operating Temperature" "-40°C ~ 150°C"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4201,7 +3523,7 @@
 			)
 		)
 		(property "Dimensions" "5.10mm x 3.00mm x 4.39mm"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4211,7 +3533,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4221,7 +3543,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "9774030151R"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4231,7 +3553,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4241,7 +3563,7 @@
 			)
 		)
 		(property "Distributor Part Number" "732-7083-1-ND"
-			(at 138.43 182.245 0)
+			(at 142.875 173.355 0)
 			(show_name yes)
 			(effects
 				(font
@@ -4256,7 +3578,7 @@
 		(instances
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/315811e7-ba6e-4f84-a73b-3e30fef30e7f"
-					(reference "MT4")
+					(reference "MTG4")
 					(unit 1)
 				)
 			)
