@@ -3953,10 +3953,7 @@
 			"ETH_3_N" "ETH_NLED1" "ETH_NLED2" "ETH_NLED3"
 		)
 	)
-	(bus_alias "USB2_HOST"
-		(members "USB_P" "USB_N")
-	)
-	(bus_alias "USB2_OTG"
+	(bus_alias "USB2"
 		(members "USB_P" "USB_N" "OTG_ID")
 	)
 	(bus_alias "USB3"

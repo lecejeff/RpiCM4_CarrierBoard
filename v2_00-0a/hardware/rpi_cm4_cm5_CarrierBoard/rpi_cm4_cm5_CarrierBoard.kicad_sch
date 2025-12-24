@@ -2750,7 +2750,7 @@
 			)
 		)
 		(pin "USB_HUB_~{RST}" input
-			(at 217.805 97.155 180)
+			(at 217.805 89.535 180)
 			(uuid "389811c3-9b6a-4e1c-b677-3561f95d167c")
 			(effects
 				(font
@@ -2770,13 +2770,13 @@
 			)
 		)
 		(pin "CM5_USB3_1_~{OC}" output
-			(at 217.805 110.49 180)
+			(at 255.905 92.71 0)
 			(uuid "4121e120-80ba-4b9f-95be-117cba89e71c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "CM5_USB3_0_~{OC}" output
@@ -2800,7 +2800,7 @@
 			)
 		)
 		(pin "CM5_USB3_1{USB3}" bidirectional
-			(at 217.805 91.44 180)
+			(at 217.805 99.06 180)
 			(uuid "8c54bb5e-7946-4b28-ab16-f51d9fb6f526")
 			(effects
 				(font
@@ -2809,9 +2809,9 @@
 				(justify left)
 			)
 		)
-		(pin "{PCIe}" bidirectional
-			(at 217.805 106.68 180)
-			(uuid "1bfdd2e8-0cee-44ea-bba1-e0fe979c0d17")
+		(pin "USB_HUB{PCIe}" bidirectional
+			(at 217.805 107.315 180)
+			(uuid "a89a65b5-3463-48b8-a67a-c564e90f2aa5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,7 +2829,7 @@
 	)
 	(sheet
 		(at 133.35 25.4)
-		(size 25.4 19.05)
+		(size 45.72 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2853,7 +2853,7 @@
 			)
 		)
 		(property "Sheetfile" "CM4_CM5_CONN_B.kicad_sch"
-			(at 133.35 45.0346 0)
+			(at 133.35 53.9246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2861,10 +2861,172 @@
 				(justify left top)
 			)
 		)
+		(pin "DSI1{MIPI_DSI}" bidirectional
+			(at 133.35 27.305 180)
+			(uuid "8776afec-4653-49d0-8596-698b6352259f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CM5_USB3_0{USB3}" bidirectional
+			(at 133.35 29.845 180)
+			(uuid "9b4d33e2-eea6-4e25-8893-a4d62477d581")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB{USB2}" bidirectional
+			(at 133.35 32.385 180)
+			(uuid "bf4a3399-84fa-4e12-80df-ff724d16879d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CSI1{MIPI_CSI}" bidirectional
+			(at 133.35 34.925 180)
+			(uuid "7d9b608f-f92e-47af-a60b-c1eacfe17f70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HDMI0{HDMI}" bidirectional
+			(at 133.35 37.465 180)
+			(uuid "3837ae88-8497-4fb5-b7ac-fb98acc6a669")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CM5_USB3_1{USB3}" bidirectional
+			(at 133.35 40.005 180)
+			(uuid "ddfab08b-6fab-49d9-8ff8-55af5eb8d3ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_HUB{PCIe}" bidirectional
+			(at 179.07 33.02 0)
+			(uuid "964bcaee-51f5-4eaf-a188-a41460d2c561")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CM5_USB3_VBUS_EN" output
+			(at 179.07 38.1 0)
+			(uuid "76076583-24fe-4560-9e48-6b577f1f6bf5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "M2{PCIe}" bidirectional
+			(at 179.07 35.56 0)
+			(uuid "d0252fff-abbe-427b-b462-d4115bbc1ac4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "rpi_cm4_cm5_CarrierBoard"
 				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
 					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 76.2)
+		(size 17.145 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "68c27264-913b-431e-a411-550b93528c71")
+		(property "Sheetname" "USB_MUX"
+			(at 63.5 75.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "USB_MUX.kicad_sch"
+			(at 63.5 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB{USB2}" bidirectional
+			(at 63.5 82.55 180)
+			(uuid "c8de042d-1db0-4e66-a90c-88b25ecb69dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_OTG{USB2}" bidirectional
+			(at 80.645 78.74 0)
+			(uuid "4e585cd1-712a-40a2-a988-a901163287c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_HOST{USB2}" bidirectional
+			(at 80.645 86.36 0)
+			(uuid "f6c85912-5982-458b-801f-d04e65a74080")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e"
+					(page "12")
 				)
 			)
 		)
@@ -2912,13 +3074,12 @@
 		)
 	)
 	(sheet
-		(at 170.815 67.31)
+		(at 170.815 67.945)
 		(size 25.4 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2928,7 +3089,7 @@
 		)
 		(uuid "8beee822-4832-4b71-87eb-d8b908112c5e")
 		(property "Sheetname" "DSI - LVDS bridge"
-			(at 170.815 66.5984 0)
+			(at 174.498 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2937,7 +3098,7 @@
 			)
 		)
 		(property "Sheetfile" "DSI_LVDS_bridge.kicad_sch"
-			(at 170.815 86.9446 0)
+			(at 170.815 87.5796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2955,9 +3116,9 @@
 				(justify left)
 			)
 		)
-		(pin "MIPI-DSI[0..9]" bidirectional
-			(at 170.815 74.295 180)
-			(uuid "f3d438ec-03bc-47fb-b38a-385bba826cf0")
+		(pin "DSI1{MIPI_DSI}" bidirectional
+			(at 170.815 77.47 180)
+			(uuid "21fd94aa-1f6a-4f33-b7de-5a1635e283f0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2965,19 +3126,9 @@
 				(justify left)
 			)
 		)
-		(pin "I2C3[0..1]" bidirectional
-			(at 170.815 80.01 180)
-			(uuid "5465edee-d8d0-41f4-9f7b-5abc06ab9b5b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LVDS_A[0..9]" bidirectional
-			(at 196.215 71.755 0)
-			(uuid "61ed3721-521e-4cf6-8737-6301d5490e6c")
+		(pin "LVDS_A{LVDS}" bidirectional
+			(at 196.215 73.66 0)
+			(uuid "77be7cde-7fa5-43c1-9411-f2d5dbb8d95a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2985,9 +3136,19 @@
 				(justify right)
 			)
 		)
-		(pin "LVDS_B[0..9]" bidirectional
-			(at 196.215 77.47 0)
-			(uuid "59516da2-516f-4923-a6fb-8f3de922ed5a")
+		(pin "I2C3{I2C}" bidirectional
+			(at 170.815 85.09 180)
+			(uuid "6a082023-9330-48b1-b07b-1d45b8c4e7ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LVDS_B{LVDS}" bidirectional
+			(at 196.215 81.915 0)
+			(uuid "c3a719ef-20c4-4665-83e0-e9920170c6a9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,9 +3602,9 @@
 				(justify left)
 			)
 		)
-		(pin "HDMI0[0..11]" input
-			(at 128.27 139.7 180)
-			(uuid "1ecfae73-47f0-451c-9d08-25baa98143c3")
+		(pin "HDMI0{HDMI}" bidirectional
+			(at 128.27 139.065 180)
+			(uuid "2cb33ca8-cf64-42b5-b4bf-9df4bdd1106b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3493,9 +3654,9 @@
 				(justify left top)
 			)
 		)
-		(pin "ETH[0..10]" bidirectional
-			(at 203.2 133.35 180)
-			(uuid "3bd0e3ce-db89-4d60-8e88-741e51c26c3d")
+		(pin "{ETH}" bidirectional
+			(at 203.2 130.175 180)
+			(uuid "6baa6ab7-f657-4080-a952-184fd2bb599a")
 			(effects
 				(font
 					(size 1.27 1.27)

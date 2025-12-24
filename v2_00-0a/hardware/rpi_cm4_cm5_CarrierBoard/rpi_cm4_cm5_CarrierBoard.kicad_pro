@@ -653,6 +653,10 @@
     [
       "81b87d3e-2b5e-4732-a375-f337eeb3ec3b",
       "Power_Input"
+    ],
+    [
+      "68c27264-913b-431e-a411-550b93528c71",
+      "USB_MUX"
     ]
   ],
   "text_variables": {}

@@ -2820,9 +2820,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(bus_alias "HDMI0"
-		(members "HDMI_D0_P" "HDMI_D0_N" "HDMI_D1_P" "HDMI_D1_N" "HDMI_D2_P" "HDMI_D2_N"
-			"HDMI_CLK_P" "HDMI_CLK_N" "HDMI_SDA" "HDMI_SCL" "HDMI_CEC" "HDMI_HPD"
+	(bus_alias "HDMI"
+		(members "D0_P" "D0_N" "D1_P" "D1_N" "D2_P" "D2_N" "CLK_P" "CLK_N" "SDA"
+			"SCL" "CEC" "HPD"
 		)
 	)
 	(junction
@@ -4395,7 +4395,7 @@
 		)
 		(uuid "f9c35be5-857f-41b3-8e82-11799105666c")
 	)
-	(label "HDMI_D0_N"
+	(label "HDMI0.D0_N"
 		(at 114.3 69.215 0)
 		(effects
 			(font
@@ -4405,7 +4405,7 @@
 		)
 		(uuid "17ba443d-3d23-41c3-b264-61d46e2cee66")
 	)
-	(label "HDMI_CEC"
+	(label "HDMI0.CEC"
 		(at 114.3 97.79 0)
 		(effects
 			(font
@@ -4415,7 +4415,7 @@
 		)
 		(uuid "27a430a3-c51c-4068-9c10-e0835d2c03c7")
 	)
-	(label "HDMI_HPD"
+	(label "HDMI0.HPD"
 		(at 114.3 100.33 0)
 		(effects
 			(font
@@ -4425,7 +4425,7 @@
 		)
 		(uuid "3f53c37b-002f-41bf-a448-beb496c68415")
 	)
-	(label "HDMI_SCL"
+	(label "HDMI0.SCL"
 		(at 114.3 92.71 0)
 		(effects
 			(font
@@ -4435,7 +4435,7 @@
 		)
 		(uuid "497af51f-9199-4195-ae20-9703838fb7f8")
 	)
-	(label "HDMI_CLK_P"
+	(label "HDMI0.CLK_P"
 		(at 114.3 87.63 0)
 		(effects
 			(font
@@ -4445,7 +4445,7 @@
 		)
 		(uuid "6d8dfd70-d06a-4d7d-aaf2-4d0f38fddf2d")
 	)
-	(label "HDMI_SDA"
+	(label "HDMI0.SDA"
 		(at 114.3 95.25 0)
 		(effects
 			(font
@@ -4455,7 +4455,7 @@
 		)
 		(uuid "7e17c599-2554-49de-98b3-a40934078aa7")
 	)
-	(label "HDMI_D0_P"
+	(label "HDMI0.D0_P"
 		(at 114.3 66.675 0)
 		(effects
 			(font
@@ -4475,7 +4475,7 @@
 		)
 		(uuid "94ffae86-c514-45d3-a425-d8b660a9b5e3")
 	)
-	(label "HDMI_D1_P"
+	(label "HDMI0.D1_P"
 		(at 114.3 61.595 0)
 		(effects
 			(font
@@ -4485,7 +4485,7 @@
 		)
 		(uuid "b09a3c75-bb25-4e02-a29b-227b29bc58f2")
 	)
-	(label "HDMI_D2_P"
+	(label "HDMI0.D2_P"
 		(at 114.3 56.515 0)
 		(effects
 			(font
@@ -4495,7 +4495,7 @@
 		)
 		(uuid "b66352ef-c008-45c7-b6bc-94fd86c35d9a")
 	)
-	(label "HDMI_CLK_N"
+	(label "HDMI0.CLK_N"
 		(at 114.3 90.17 0)
 		(effects
 			(font
@@ -4505,7 +4505,7 @@
 		)
 		(uuid "c35e8dfa-f9e5-423c-ab74-60809da8eadc")
 	)
-	(label "HDMI_D1_N"
+	(label "HDMI0.D1_N"
 		(at 114.3 64.135 0)
 		(effects
 			(font
@@ -4515,7 +4515,7 @@
 		)
 		(uuid "d8c314d9-12ff-4094-98e9-614d94c2d18f")
 	)
-	(label "HDMI_D2_N"
+	(label "HDMI0.D2_N"
 		(at 114.3 59.055 0)
 		(effects
 			(font
@@ -4536,8 +4536,8 @@
 		)
 		(uuid "5c41e5d1-3ead-4a5f-905e-a0542ab8d12d")
 	)
-	(hierarchical_label "{HDMI0}"
-		(shape input)
+	(hierarchical_label "HDMI0{HDMI}"
+		(shape bidirectional)
 		(at 76.2 50.8 180)
 		(effects
 			(font

@@ -3663,7 +3663,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.185 93.98) (xy 88.265 93.98)
+			(xy 84.455 93.98) (xy 88.265 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3953,7 +3953,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.295 93.98) (xy 76.835 93.98)
+			(xy 74.295 93.98) (xy 78.105 93.98)
 		)
 		(stroke
 			(width 0)
@@ -7130,7 +7130,7 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Resistors/RES_SMT_00013")
-		(at 81.915 93.98 180)
+		(at 83.185 93.98 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7138,7 +7138,7 @@
 		(dnp no)
 		(uuid "7956b678-ad29-4321-ac52-94f89d31cf8d")
 		(property "Reference" "R10"
-			(at 80.137 92.456 0)
+			(at 81.407 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7146,7 +7146,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 80.137 95.758 0)
+			(at 81.407 95.758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7154,7 +7154,7 @@
 			)
 		)
 		(property "Footprint" "footprint:RES_0402"
-			(at 81.407 71.882 0)
+			(at 82.677 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7163,7 +7163,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 81.915 93.98 0)
+			(at 83.185 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7172,7 +7172,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/16W 0402"
-			(at 80.137 84.074 0)
+			(at 81.407 84.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7181,7 +7181,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 81.661 73.66 0)
+			(at 82.931 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7190,7 +7190,7 @@
 			)
 		)
 		(property "Power" "1/16W"
-			(at 81.661 79.756 0)
+			(at 82.931 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7199,7 +7199,7 @@
 			)
 		)
 		(property "Package" "0402"
-			(at 81.915 77.724 0)
+			(at 83.185 77.724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7208,7 +7208,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 81.661 75.692 0)
+			(at 82.931 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7217,7 +7217,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-0710KL"
-			(at 81.661 86.106 0)
+			(at 82.931 86.106 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7226,7 +7226,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 81.915 88.138 0)
+			(at 83.185 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7235,7 +7235,7 @@
 			)
 		)
 		(property "Distributor Part Number" "311-10.0KLRCT-ND"
-			(at 81.153 81.788 0)
+			(at 82.423 81.788 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7244,7 +7244,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 81.915 93.98 0)
+			(at 83.185 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7253,7 +7253,7 @@
 			)
 		)
 		(property "Operating Temperature" "-55°C ~ 155°C"
-			(at 81.153 69.596 0)
+			(at 82.423 69.596 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7262,7 +7262,7 @@
 			)
 		)
 		(property "Type" "RES SMT"
-			(at 81.915 93.98 0)
+			(at 83.185 93.98 0)
 			(show_name yes)
 			(effects
 				(font
@@ -7272,7 +7272,7 @@
 			)
 		)
 		(property "Dimensions" "1.00mm x 0.50mm"
-			(at 81.915 93.98 0)
+			(at 83.185 93.98 0)
 			(show_name yes)
 			(effects
 				(font

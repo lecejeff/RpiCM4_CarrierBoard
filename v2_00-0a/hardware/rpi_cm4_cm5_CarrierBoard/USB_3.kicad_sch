@@ -6377,8 +6377,8 @@
 		)
 	)
 	(bus_alias "PCIe"
-		(members "PCIe_~{RST}" "PCIe_~{WAKE}" "PCIe_CLK_~{REQ}" "PCIe_CLK_P" "PCIe_CLK_N"
-			"PCIe_RX_P" "PCIe_RX_N" "PCIe_TX_P" "PCIe_TX_N"
+		(members "~{RST}" "~{WAKE}" "CLK_~{REQ}" "CLK_P" "CLK_N" "RX_P" "RX_N"
+			"TX_P" "TX_N"
 		)
 	)
 	(rectangle
@@ -7160,6 +7160,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2546523-0042-4458-b6ed-8dad6fdb3cd4")
+	)
+	(junction
+		(at 113.665 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f38c0b7d-1855-4d4e-994c-3c8f7509e468")
 	)
 	(junction
 		(at 157.48 101.6)
@@ -8412,6 +8418,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.665 148.59) (xy 113.665 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e74a8d4-488f-472e-9c15-37b186282340")
+	)
+	(wire
+		(pts
 			(xy 160.02 96.52) (xy 190.5 96.52)
 		)
 		(stroke
@@ -9372,6 +9388,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 35.56) (xy 68.58 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60d1b411-069e-41e4-987e-888b22389455")
+	)
+	(wire
+		(pts
 			(xy 151.13 109.22) (xy 153.67 109.22)
 		)
 		(stroke
@@ -9649,6 +9675,16 @@
 			(type default)
 		)
 		(uuid "6e3f445a-15b0-46b0-a690-cd618fd34e9c")
+	)
+	(wire
+		(pts
+			(xy 113.665 166.37) (xy 113.665 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f35ea4c-1fea-4d9f-bb0b-6b18e2e14ebf")
 	)
 	(bus
 		(pts
@@ -10060,16 +10096,6 @@
 		)
 		(uuid "81ff7fe8-0987-4fd4-94c6-98908aef9fe0")
 	)
-	(wire
-		(pts
-			(xy 43.18 33.02) (xy 85.09 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82d09921-1b71-4ee8-b898-432bd046b531")
-	)
 	(bus
 		(pts
 			(xy 193.04 106.68) (xy 193.04 109.22)
@@ -10159,16 +10185,6 @@
 			(type default)
 		)
 		(uuid "86f0101b-ab74-42e0-9611-323907a71890")
-	)
-	(wire
-		(pts
-			(xy 43.18 35.56) (xy 68.58 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86ff3d98-0681-4f8e-9b98-1a1abb800ee4")
 	)
 	(wire
 		(pts
@@ -11112,6 +11128,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.665 148.59) (xy 140.97 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdcd46c1-5dae-4532-b05f-5f8953bbca31")
+	)
+	(wire
+		(pts
 			(xy 243.84 41.91) (xy 265.43 41.91)
 		)
 		(stroke
@@ -11452,7 +11478,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 148.59) (xy 140.97 148.59)
+			(xy 99.06 148.59) (xy 113.665 148.59)
 		)
 		(stroke
 			(width 0)
@@ -12152,6 +12178,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 33.02) (xy 85.09 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f570d595-a731-4467-8e92-a8884758f499")
+	)
+	(wire
+		(pts
 			(xy 160.02 96.52) (xy 160.02 130.81)
 		)
 		(stroke
@@ -12290,8 +12326,8 @@
 		)
 		(uuid "00feaf12-392d-411c-94ba-3857accf17f4")
 	)
-	(label "PCIE_TX_P"
-		(at 48.26 58.42 0)
+	(label "USB_HUB.TX_P"
+		(at 43.18 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12380,8 +12416,8 @@
 		)
 		(uuid "226bf572-64ff-40fc-891f-eb99254471b2")
 	)
-	(label "PCIE_RX_P"
-		(at 48.26 50.8 0)
+	(label "USB_HUB.RX_P"
+		(at 43.18 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12540,8 +12576,8 @@
 		)
 		(uuid "55c90f96-127b-4a9e-a225-e9e941c20458")
 	)
-	(label "PCIE_~{RST}"
-		(at 48.26 33.02 0)
+	(label "USB_HUB.~{RST}"
+		(at 43.18 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12570,8 +12606,8 @@
 		)
 		(uuid "632eae3c-bdb8-478c-a515-52e03717b856")
 	)
-	(label "PCIE_~{WAKE}"
-		(at 48.26 35.56 0)
+	(label "USB_HUB.~{WAKE}"
+		(at 43.18 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12590,8 +12626,8 @@
 		)
 		(uuid "68d0e659-6362-4d4c-9105-24a17e3b5f61")
 	)
-	(label "PCIE_CLK_N"
-		(at 48.26 45.72 0)
+	(label "USB_HUB.CLK_N"
+		(at 43.18 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12620,8 +12656,8 @@
 		)
 		(uuid "71021255-198b-45f3-a582-ab51c54b9585")
 	)
-	(label "PCIE_RX_N"
-		(at 48.26 53.34 0)
+	(label "USB_HUB.RX_N"
+		(at 43.18 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12700,8 +12736,8 @@
 		)
 		(uuid "8db9a58a-5510-4c84-b279-7a4f29590055")
 	)
-	(label "PCIE_TX_N"
-		(at 48.26 60.96 0)
+	(label "USB_HUB.TX_N"
+		(at 43.18 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12780,8 +12816,8 @@
 		)
 		(uuid "b163838a-ec54-4155-a7b5-7eba9d2dbc2a")
 	)
-	(label "PCIE_CLK_~{REQ}"
-		(at 48.26 38.1 0)
+	(label "USB_HUB.~{REQ}"
+		(at 43.18 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12820,8 +12856,8 @@
 		)
 		(uuid "bafef647-d62a-463e-9ae0-240770972109")
 	)
-	(label "PCIE_CLK_P"
-		(at 48.26 43.18 0)
+	(label "USB_HUB.CLK_P"
+		(at 43.18 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12982,7 +13018,7 @@
 		)
 		(uuid "7a9bb004-e567-4147-9110-ed1dc5d597a8")
 	)
-	(hierarchical_label "{PCIe}"
+	(hierarchical_label "USB_HUB{PCIe}"
 		(shape bidirectional)
 		(at 34.29 27.94 180)
 		(effects
@@ -25302,6 +25338,177 @@
 		)
 	)
 	(symbol
+		(lib_id "KicadCompDb:Resistors/RES_SMT_00013")
+		(at 113.665 165.1 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "b3442b11-3097-48b9-ad9d-6bac457d764d")
+		(property "Reference" "R90"
+			(at 112.395 161.9249 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 112.395 164.4649 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "footprint:RES_0402"
+			(at 91.567 164.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+			(at 113.665 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/16W 0402"
+			(at 103.759 163.322 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 93.345 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power" "1/16W"
+			(at 99.441 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0402"
+			(at 97.409 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 95.377 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0402FR-0710KL"
+			(at 105.791 164.846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor" "DigiKey"
+			(at 107.823 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distributor Part Number" "311-10.0KLRCT-ND"
+			(at 101.473 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 113.665 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature" "-55°C ~ 155°C"
+			(at 89.281 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "RES SMT"
+			(at 113.665 165.1 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Dimensions" "1.00mm x 0.50mm"
+			(at 113.665 165.1 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b4fd0cd0-5984-4de2-b28a-8916a2280593")
+		)
+		(pin "1"
+			(uuid "26139e12-47eb-414d-8fd1-1d2b73d4df30")
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/0773b686-9329-480f-afb9-decb2d389d02"
+					(reference "R90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "KiCad_Pwr_Symbols:+3V3")
 		(at 215.9 73.66 0)
 		(unit 1)
@@ -26823,6 +27030,71 @@
 			(project ""
 				(path "/c6859f98-e275-4e93-9044-02f0667b32a1"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KiCad_Pwr_Symbols:GND")
+		(at 113.665 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cbeb8625-0873-43e7-ac9d-bce6f2d11383")
+		(property "Reference" "#PWR0120"
+			(at 113.665 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.665 172.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.665 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.665 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.665 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f50aa08d-be28-4c20-ab93-ff9959704a6e")
+		)
+		(instances
+			(project "rpi_cm4_cm5_CarrierBoard"
+				(path "/7dcdf741-90ca-4333-848c-806f4d64158e/0773b686-9329-480f-afb9-decb2d389d02"
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
