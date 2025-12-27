@@ -657,6 +657,14 @@
     [
       "68c27264-913b-431e-a411-550b93528c71",
       "USB_MUX"
+    ],
+    [
+      "13abfb0a-e124-4fcc-bb4d-eb8f0bf663f5",
+      "TFT_CONN"
+    ],
+    [
+      "55ef0c67-4187-4b81-be30-622ed6c47c9b",
+      "TFT_POWER"
     ]
   ],
   "text_variables": {}

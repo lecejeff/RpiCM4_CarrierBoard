@@ -27108,7 +27108,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "cbeb8625-0873-43e7-ac9d-bce6f2d11383")
+		(uuid "cbeb8625-0873-43e7-ac9d-bce6f2d11384")
 		(property "Reference" "#PWR041"
 			(at 208.28 111.76 0)
 			(effects
@@ -27154,7 +27154,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f50aa08d-be28-4c20-ab93-ff9959704a6e")
+			(uuid "f50aa08d-be28-4c20-ab93-ff9959704a6f")
 		)
 		(instances
 			(project "rpi_cm4_cm5_CarrierBoard"
