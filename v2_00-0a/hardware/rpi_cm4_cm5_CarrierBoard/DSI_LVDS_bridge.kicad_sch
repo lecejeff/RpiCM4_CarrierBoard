@@ -6759,7 +6759,7 @@
 		(uuid "7f83114c-b323-49d4-ba05-4b4dcdf9901d")
 	)
 	(hierarchical_label "LVDS_A{LVDS}"
-		(shape bidirectional)
+		(shape output)
 		(at 260.35 48.895 0)
 		(effects
 			(font
@@ -6770,7 +6770,7 @@
 		(uuid "a486be68-d712-4273-bdf7-b5c15e5556d0")
 	)
 	(hierarchical_label "LVDS_B{LVDS}"
-		(shape bidirectional)
+		(shape output)
 		(at 260.35 76.835 0)
 		(effects
 			(font

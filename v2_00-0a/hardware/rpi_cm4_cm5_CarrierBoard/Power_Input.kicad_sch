@@ -3362,7 +3362,33 @@
 			(symbol "Resistors/RES_SMT_00022_1_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0.508 0.508) (xy 1.27 -0.508) (xy 2.032 0.508) (xy 2.794 -0.508) (xy 3.302 0)
+						(xy 0.254 0) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 0 0 255 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0) (xy 0.762 0.508) (xy 1.524 -0.508) (xy 2.286 0.508) (xy 3.048 -0.508) (xy 3.556 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 0 0 255 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.556 0)
 					)
 					(stroke
 						(width 0)
@@ -3392,7 +3418,7 @@
 					)
 				)
 				(pin passive line
-					(at 4.572 0 180)
+					(at 5.08 0 180)
 					(length 1.27)
 					(name ""
 						(effects

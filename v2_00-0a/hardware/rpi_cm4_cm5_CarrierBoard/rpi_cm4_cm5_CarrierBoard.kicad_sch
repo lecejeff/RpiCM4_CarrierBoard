@@ -18,9 +18,123 @@
 		(comment 8 "WIP")
 	)
 	(lib_symbols)
+	(no_connect
+		(at 228.6 70.485)
+		(uuid "310f97d6-1225-4405-b8de-1174b78248b9")
+	)
+	(wire
+		(pts
+			(xy 228.6 83.185) (xy 251.46 83.185)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1619125d-c261-45ca-94aa-a19a548a8fe7")
+	)
+	(bus
+		(pts
+			(xy 190.5 75.565) (xy 251.46 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204fa21b-0320-424a-a1ab-ae469f152c96")
+	)
+	(wire
+		(pts
+			(xy 228.6 90.805) (xy 251.46 90.805)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ec49eb0-1a99-46e9-8810-dbc8efada09b")
+	)
+	(wire
+		(pts
+			(xy 228.6 88.265) (xy 251.46 88.265)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6318e37a-02cb-4282-a4de-e0935dcf7410")
+	)
+	(bus
+		(pts
+			(xy 228.6 65.405) (xy 251.46 65.405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "711ae7a5-55a2-43d9-8719-43fcb43a38bd")
+	)
+	(wire
+		(pts
+			(xy 228.6 100.965) (xy 251.46 100.965)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76f49ef7-cba9-4b8e-9d8b-89550771d4ce")
+	)
+	(wire
+		(pts
+			(xy 228.6 98.425) (xy 251.46 98.425)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "915d51ad-3755-4c35-b219-d8c5bdc2d5bd")
+	)
+	(wire
+		(pts
+			(xy 228.6 93.345) (xy 251.46 93.345)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a76bcbe2-88c9-4ac5-870e-ce6652936dad")
+	)
+	(wire
+		(pts
+			(xy 228.6 80.645) (xy 251.46 80.645)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c12c81c2-1679-4031-bcac-9f5d42c68603")
+	)
+	(wire
+		(pts
+			(xy 228.6 95.885) (xy 251.46 95.885)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2dc8e59-34ad-41b2-a135-34d721841757")
+	)
+	(wire
+		(pts
+			(xy 228.6 85.725) (xy 251.46 85.725)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2ed755-2279-421e-8faf-836c955c2494")
+	)
 	(sheet
-		(at 237.49 120.015)
-		(size 38.1 26.035)
+		(at 241.935 120.65)
+		(size 29.845 26.035)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -35,7 +149,7 @@
 		)
 		(uuid "0773b686-9329-480f-afb9-decb2d389d02")
 		(property "Sheetname" "USB_3"
-			(at 237.49 119.3034 0)
+			(at 241.935 119.9384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,7 +158,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_3.kicad_sch"
-			(at 237.49 146.6346 0)
+			(at 241.935 147.2696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -53,7 +167,7 @@
 			)
 		)
 		(pin "USB_HUB_~{RST}" input
-			(at 237.49 123.19 180)
+			(at 241.935 122.555 180)
 			(uuid "389811c3-9b6a-4e1c-b677-3561f95d167c")
 			(effects
 				(font
@@ -63,7 +177,7 @@
 			)
 		)
 		(pin "CM5_USB3_0{USB3}" bidirectional
-			(at 237.49 136.525 180)
+			(at 241.935 137.16 180)
 			(uuid "2526f788-dcd1-46e3-8c77-ada1158106a1")
 			(effects
 				(font
@@ -73,7 +187,7 @@
 			)
 		)
 		(pin "CM5_USB3_1_~{OC}" output
-			(at 275.59 126.365 0)
+			(at 271.78 127 0)
 			(uuid "4121e120-80ba-4b9f-95be-117cba89e71c")
 			(effects
 				(font
@@ -83,7 +197,7 @@
 			)
 		)
 		(pin "CM5_USB3_0_~{OC}" output
-			(at 275.59 123.19 0)
+			(at 271.78 123.825 0)
 			(uuid "abea7cc2-8130-4a7f-8cc7-05f3d981f6a5")
 			(effects
 				(font
@@ -93,7 +207,7 @@
 			)
 		)
 		(pin "CM5_USB3_VBUS_EN" input
-			(at 275.59 128.905 0)
+			(at 271.78 129.54 0)
 			(uuid "cb77207c-79b2-42d6-9b6b-c93c5b68c275")
 			(effects
 				(font
@@ -103,7 +217,7 @@
 			)
 		)
 		(pin "CM5_USB3_1{USB3}" bidirectional
-			(at 237.49 132.715 180)
+			(at 241.935 133.35 180)
 			(uuid "8c54bb5e-7946-4b28-ab16-f51d9fb6f526")
 			(effects
 				(font
@@ -113,7 +227,7 @@
 			)
 		)
 		(pin "USB_HUB{PCIe}" bidirectional
-			(at 237.49 140.97 180)
+			(at 241.935 141.605 180)
 			(uuid "a89a65b5-3463-48b8-a67a-c564e90f2aa5")
 			(effects
 				(font
@@ -131,13 +245,12 @@
 		)
 	)
 	(sheet
-		(at 215.9 67.945)
-		(size 27.94 19.05)
+		(at 251.46 63.5)
+		(size 29.845 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -147,7 +260,7 @@
 		)
 		(uuid "13abfb0a-e124-4fcc-bb4d-eb8f0bf663f5")
 		(property "Sheetname" "TFT_CONN"
-			(at 215.9 67.2334 0)
+			(at 262.636 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -156,7 +269,7 @@
 			)
 		)
 		(property "Sheetfile" "TFT_CONN.kicad_sch"
-			(at 215.9 87.5796 0)
+			(at 251.46 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -165,7 +278,7 @@
 			)
 		)
 		(pin "TFT_VGH" input
-			(at 215.9 69.85 180)
+			(at 251.46 90.805 180)
 			(uuid "b997e8e5-ca1e-463e-80a9-ffbd70a8412e")
 			(effects
 				(font
@@ -175,7 +288,7 @@
 			)
 		)
 		(pin "TFT_AVDD" input
-			(at 215.9 71.755 180)
+			(at 251.46 88.265 180)
 			(uuid "602453be-eda6-402f-bfbf-37650506e94c")
 			(effects
 				(font
@@ -185,7 +298,7 @@
 			)
 		)
 		(pin "LVDS_A{LVDS}" input
-			(at 215.9 73.66 180)
+			(at 251.46 65.405 180)
 			(uuid "3c3c4b2c-50d8-4b38-b78b-e727ddcbb343")
 			(effects
 				(font
@@ -195,7 +308,7 @@
 			)
 		)
 		(pin "USB_HOST{USB2}" bidirectional
-			(at 215.9 75.565 180)
+			(at 251.46 75.565 180)
 			(uuid "12b71a9c-2082-47ce-b7c9-0b385cf19ad5")
 			(effects
 				(font
@@ -205,7 +318,7 @@
 			)
 		)
 		(pin "TFT_VGL" input
-			(at 215.9 77.47 180)
+			(at 251.46 93.345 180)
 			(uuid "37f7b4dd-c5a9-49ed-bc9f-d1ed56074d10")
 			(effects
 				(font
@@ -215,7 +328,7 @@
 			)
 		)
 		(pin "TFT_VCOM" input
-			(at 215.9 79.375 180)
+			(at 251.46 95.885 180)
 			(uuid "3a45fb0b-fee3-43e5-828a-7341d25458f6")
 			(effects
 				(font
@@ -225,7 +338,7 @@
 			)
 		)
 		(pin "TFT_VDD" input
-			(at 215.9 81.28 180)
+			(at 251.46 85.725 180)
 			(uuid "c41780f3-4231-4dab-8f5a-5e61b4979ace")
 			(effects
 				(font
@@ -235,7 +348,7 @@
 			)
 		)
 		(pin "TFT_~{RESET}" input
-			(at 215.9 83.185 180)
+			(at 251.46 80.645 180)
 			(uuid "f2d20e9f-173b-470c-9429-a66795a2883d")
 			(effects
 				(font
@@ -245,7 +358,7 @@
 			)
 		)
 		(pin "TFT_STBYB" input
-			(at 215.9 85.09 180)
+			(at 251.46 83.185 180)
 			(uuid "94872180-5525-4951-870c-d3281b26c419")
 			(effects
 				(font
@@ -255,23 +368,23 @@
 			)
 		)
 		(pin "TFT_LED-" output
-			(at 243.84 85.725 0)
+			(at 251.46 100.965 180)
 			(uuid "c9a48fb3-9c36-4411-ad1b-bee1be223aa3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "TFT_LED+" input
-			(at 243.84 83.82 0)
+			(at 251.46 98.425 180)
 			(uuid "932702ad-2f0e-45c1-8823-e0b0304d6b44")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
@@ -415,13 +528,12 @@
 		)
 	)
 	(sheet
-		(at 196.85 95.25)
-		(size 25.4 19.05)
+		(at 198.755 78.74)
+		(size 29.845 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -431,7 +543,7 @@
 		)
 		(uuid "55ef0c67-4187-4b81-be30-622ed6c47c9b")
 		(property "Sheetname" "TFT_POWER"
-			(at 196.85 94.5384 0)
+			(at 208.026 78.232 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -440,12 +552,122 @@
 			)
 		)
 		(property "Sheetfile" "TFT_POWER.kicad_sch"
-			(at 196.85 114.8846 0)
+			(at 198.628 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "BL_PWM" input
+			(at 198.755 83.82 180)
+			(uuid "bb1b7174-3719-4f7b-a995-1f580de01b6b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TFT_3V8" output
+			(at 228.6 95.885 0)
+			(uuid "9867e1da-cc58-4374-acae-da132a943762")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_LED-" input
+			(at 228.6 100.965 0)
+			(uuid "62879392-a1b4-409c-a9b4-1de2dc3f0d57")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_LED+" output
+			(at 228.6 98.425 0)
+			(uuid "1491f2f7-3ad1-4b7d-b3cd-1a5646421437")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_~{RST}" output
+			(at 228.6 80.645 0)
+			(uuid "83e7230e-ef7c-41e3-9000-2cd97e0211aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_9V6" output
+			(at 228.6 88.265 0)
+			(uuid "782002ac-c14c-4b8d-bbee-92cec414b01d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_STBYB" output
+			(at 228.6 83.185 0)
+			(uuid "a882be87-9513-4019-97f3-c74709b09796")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYS_~{RST}" input
+			(at 198.755 80.645 180)
+			(uuid "9ead08cd-a93b-443a-9476-09ceb4cd9e29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TFT_-6V" output
+			(at 228.6 93.345 0)
+			(uuid "0b3b0289-7ef8-4064-bad4-6ad19ef11ec3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_18V" output
+			(at 228.6 90.805 0)
+			(uuid "8115b1b2-f416-4032-ad6c-acf885bc61c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TFT_VDD" output
+			(at 228.6 85.725 0)
+			(uuid "68627146-b654-4e93-acdd-29e06b7adb6f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -457,13 +679,12 @@
 		)
 	)
 	(sheet
-		(at 57.15 76.2)
-		(size 23.495 12.7)
+		(at 159.385 71.12)
+		(size 29.845 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -473,7 +694,7 @@
 		)
 		(uuid "68c27264-913b-431e-a411-550b93528c71")
 		(property "Sheetname" "USB_MUX"
-			(at 57.15 75.4884 0)
+			(at 168.91 70.739 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -482,7 +703,7 @@
 			)
 		)
 		(property "Sheetfile" "USB_MUX.kicad_sch"
-			(at 57.15 89.4846 0)
+			(at 159.385 78.0546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -491,7 +712,7 @@
 			)
 		)
 		(pin "USB{USB2}" bidirectional
-			(at 57.15 82.55 180)
+			(at 159.385 73.025 180)
 			(uuid "c8de042d-1db0-4e66-a90c-88b25ecb69dd")
 			(effects
 				(font
@@ -501,7 +722,7 @@
 			)
 		)
 		(pin "USB_OTG{USB2}" bidirectional
-			(at 80.645 78.74 0)
+			(at 189.23 73.025 0)
 			(uuid "4e585cd1-712a-40a2-a988-a901163287c4")
 			(effects
 				(font
@@ -511,7 +732,7 @@
 			)
 		)
 		(pin "USB_HOST{USB2}" bidirectional
-			(at 80.645 86.36 0)
+			(at 189.23 75.565 0)
 			(uuid "f6c85912-5982-458b-801f-d04e65a74080")
 			(effects
 				(font
@@ -571,8 +792,8 @@
 		)
 	)
 	(sheet
-		(at 170.815 67.945)
-		(size 25.4 19.05)
+		(at 198.755 63.5)
+		(size 29.845 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -586,7 +807,7 @@
 		)
 		(uuid "8beee822-4832-4b71-87eb-d8b908112c5e")
 		(property "Sheetname" "DSI - LVDS bridge"
-			(at 174.498 67.31 0)
+			(at 205.232 62.992 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -595,7 +816,7 @@
 			)
 		)
 		(property "Sheetfile" "DSI_LVDS_bridge.kicad_sch"
-			(at 170.815 87.5796 0)
+			(at 198.628 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -604,7 +825,7 @@
 			)
 		)
 		(pin "SYS_~{RST}" input
-			(at 170.815 69.85 180)
+			(at 198.755 65.405 180)
 			(uuid "3fec9613-195e-4836-b84b-c4f2597644a5")
 			(effects
 				(font
@@ -614,7 +835,7 @@
 			)
 		)
 		(pin "DSI1{MIPI_DSI}" bidirectional
-			(at 170.815 77.47 180)
+			(at 198.755 67.945 180)
 			(uuid "21fd94aa-1f6a-4f33-b7de-5a1635e283f0")
 			(effects
 				(font
@@ -623,18 +844,8 @@
 				(justify left)
 			)
 		)
-		(pin "LVDS_A{LVDS}" bidirectional
-			(at 196.215 73.66 0)
-			(uuid "77be7cde-7fa5-43c1-9411-f2d5dbb8d95a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "I2C3{I2C}" bidirectional
-			(at 170.815 85.09 180)
+			(at 198.755 70.485 180)
 			(uuid "6a082023-9330-48b1-b07b-1d45b8c4e7ad")
 			(effects
 				(font
@@ -643,9 +854,19 @@
 				(justify left)
 			)
 		)
-		(pin "LVDS_B{LVDS}" bidirectional
-			(at 196.215 81.915 0)
-			(uuid "c3a719ef-20c4-4665-83e0-e9920170c6a9")
+		(pin "LVDS_A{LVDS}" output
+			(at 228.6 65.405 0)
+			(uuid "a832b23f-347d-4d0b-89c7-6dd1cc5c3d72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LVDS_B{LVDS}" output
+			(at 228.6 70.485 0)
+			(uuid "96dea3bf-3b60-40bb-aab6-32684aad2435")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -662,8 +883,8 @@
 		)
 	)
 	(sheet
-		(at 166.37 117.475)
-		(size 25.4 3.81)
+		(at 158.115 119.38)
+		(size 29.845 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -677,7 +898,7 @@
 		)
 		(uuid "9c05f41d-8810-41e2-a7f9-3345c9f4f612")
 		(property "Sheetname" "RESET_SUPERVISOR"
-			(at 170.434 117.221 0)
+			(at 162.814 118.999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -686,7 +907,7 @@
 			)
 		)
 		(property "Sheetfile" "RESET_SUPERVISOR.kicad_sch"
-			(at 163.576 121.92 0)
+			(at 157.988 123.571 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -695,7 +916,7 @@
 			)
 		)
 		(pin "EXT_~{RST}" input
-			(at 166.37 119.38 180)
+			(at 158.115 121.285 180)
 			(uuid "2d6f0cf6-9142-4c70-b40a-bdc01a195786")
 			(effects
 				(font
@@ -705,7 +926,7 @@
 			)
 		)
 		(pin "SYS_~{RST}" output
-			(at 191.77 119.38 0)
+			(at 187.96 121.285 0)
 			(uuid "c1c48314-dfe1-4474-9c86-aef6e07c6d23")
 			(effects
 				(font
@@ -723,8 +944,8 @@
 		)
 	)
 	(sheet
-		(at 71.12 133.35)
-		(size 28.575 12.7)
+		(at 198.755 121.285)
+		(size 29.845 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -738,7 +959,7 @@
 		)
 		(uuid "adbb075d-f33a-4d25-a8c5-71eb41bbcd81")
 		(property "Sheetname" "SD_CARD"
-			(at 79.883 132.842 0)
+			(at 207.518 120.777 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -747,7 +968,7 @@
 			)
 		)
 		(property "Sheetfile" "SD_CARD.kicad_sch"
-			(at 73.152 146.558 0)
+			(at 200.787 134.493 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -756,7 +977,7 @@
 			)
 		)
 		(pin "SD_PWR_ON" input
-			(at 71.12 135.89 180)
+			(at 198.755 123.825 180)
 			(uuid "a3be3aa7-3f92-4822-960e-c29aaf594d6f")
 			(effects
 				(font
@@ -766,7 +987,7 @@
 			)
 		)
 		(pin "{SDIO}" bidirectional
-			(at 71.12 139.7 180)
+			(at 198.755 127.635 180)
 			(uuid "a02b5f8b-454e-42a3-bbbc-c10633d78c18")
 			(effects
 				(font
@@ -1056,13 +1277,12 @@
 		)
 	)
 	(sheet
-		(at 128.27 131.445)
-		(size 20.955 11.43)
+		(at 198.755 140.335)
+		(size 29.845 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1072,7 +1292,7 @@
 		)
 		(uuid "da79d379-819b-4a23-bde6-cf0346f2b26a")
 		(property "Sheetname" "HDMI"
-			(at 128.27 130.7334 0)
+			(at 210.566 140.208 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1081,7 +1301,7 @@
 			)
 		)
 		(property "Sheetfile" "HDMI.kicad_sch"
-			(at 128.27 143.4596 0)
+			(at 198.628 147.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1090,7 +1310,7 @@
 			)
 		)
 		(pin "SYS_~{RST}" input
-			(at 128.27 133.985 180)
+			(at 198.755 142.24 180)
 			(uuid "881f6eef-51ae-464a-9d89-11d7ca6719f6")
 			(effects
 				(font
@@ -1100,7 +1320,7 @@
 			)
 		)
 		(pin "HDMI0{HDMI}" bidirectional
-			(at 128.27 139.065 180)
+			(at 198.755 144.78 180)
 			(uuid "2cb33ca8-cf64-42b5-b4bf-9df4bdd1106b")
 			(effects
 				(font
@@ -1118,13 +1338,12 @@
 		)
 	)
 	(sheet
-		(at 203.2 127)
-		(size 19.685 12.7)
+		(at 198.755 109.855)
+		(size 29.845 3.81)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1134,7 +1353,7 @@
 		)
 		(uuid "e21b738a-3a2f-4bb9-bc25-a1fb9158a2ab")
 		(property "Sheetname" "Ethernet"
-			(at 203.2 126.2884 0)
+			(at 208.28 109.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1143,7 +1362,7 @@
 			)
 		)
 		(property "Sheetfile" "Ethernet.kicad_sch"
-			(at 203.2 140.2846 0)
+			(at 198.628 114.046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1152,7 +1371,7 @@
 			)
 		)
 		(pin "{ETH}" bidirectional
-			(at 203.2 130.175 180)
+			(at 198.755 111.76 180)
 			(uuid "6baa6ab7-f657-4080-a952-184fd2bb599a")
 			(effects
 				(font
