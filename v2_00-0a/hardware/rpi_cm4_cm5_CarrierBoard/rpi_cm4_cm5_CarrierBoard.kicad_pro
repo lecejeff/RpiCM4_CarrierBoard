@@ -479,7 +479,23 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "12V0_CB": [
+        "POWER_PLANE"
+      ],
+      "1V8_CB": [
+        "POWER_PLANE"
+      ],
+      "3V3_CB": [
+        "POWER_PLANE"
+      ],
+      "Net-(C114-Pad2)": [
+        "POWER_PLANE"
+      ],
+      "Net-(D11-A)": [
+        "POWER_PLANE"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -665,6 +681,10 @@
     [
       "55ef0c67-4187-4b81-be30-622ed6c47c9b",
       "TFT_POWER"
+    ],
+    [
+      "8ead3a64-86ab-4941-a189-3d26454bcba9",
+      "dsPIC33EPxxxMU810"
     ]
   ],
   "text_variables": {}

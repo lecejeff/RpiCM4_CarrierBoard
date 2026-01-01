@@ -1956,7 +1956,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3439,6 +3439,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0ce6be8b-0338-4c5c-84b7-e38e468c58a6")
+	)
 	(text "Depopulate 0R\nfor I(meas)"
 		(exclude_from_sim no)
 		(at 156.083 65.532 0)
@@ -3508,7 +3519,7 @@
 		(at 148.59 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5ec8e882-64e6-458d-ab79-93b5a53cdaba")
+		(uuid "4c0708e8-351c-4b65-9d4c-120eb82a24b3")
 	)
 	(junction
 		(at 131.445 90.17)
@@ -4148,6 +4159,16 @@
 	)
 	(wire
 		(pts
+			(xy 159.385 69.85) (xy 161.29 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96ee370-e673-44a0-9c48-effdb72ace8f")
+	)
+	(wire
+		(pts
 			(xy 120.015 75.565) (xy 127.635 75.565)
 		)
 		(stroke
@@ -4238,6 +4259,16 @@
 	)
 	(wire
 		(pts
+			(xy 159.385 75.565) (xy 161.29 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db2b3cfc-a396-47fd-aea4-cecbb72288aa")
+	)
+	(wire
+		(pts
 			(xy 161.29 75.565) (xy 168.275 75.565)
 		)
 		(stroke
@@ -4255,16 +4286,6 @@
 			(type default)
 		)
 		(uuid "dfc3ed01-6d2d-4206-b6a2-8b2ffc109971")
-	)
-	(wire
-		(pts
-			(xy 158.877 75.565) (xy 161.29 75.565)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5e69ffb-af88-40ca-adeb-2f460430d418")
 	)
 	(wire
 		(pts
@@ -4288,6 +4309,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 69.85) (xy 153.035 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efdc5492-4ca0-407e-b395-cfd2a96e2346")
+	)
+	(wire
+		(pts
 			(xy 141.605 80.645) (xy 144.145 80.645)
 		)
 		(stroke
@@ -4305,16 +4336,6 @@
 			(type default)
 		)
 		(uuid "f4b04c62-5e13-4e45-81ae-4345a061cf09")
-	)
-	(wire
-		(pts
-			(xy 158.75 69.85) (xy 161.29 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f69421ac-f467-400e-97eb-7511f1ae2cc7")
 	)
 	(wire
 		(pts
@@ -4356,15 +4377,71 @@
 		)
 		(uuid "fde8b22b-df94-4bd5-9a4c-1892763dd2f4")
 	)
-	(wire
-		(pts
-			(xy 148.59 69.85) (xy 152.908 69.85)
+	(netclass_flag ""
+		(length 2.54)
+		(shape diamond)
+		(at 189.23 75.565 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "b09e792e-7219-43ac-8b83-8c66bbb2769b")
+		(property "Netclass" "POWER_PLANE"
+			(at 190.4365 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 0 0 1)
+				)
+				(justify left)
+			)
 		)
-		(uuid "ff462072-220c-49c8-868e-989c7faa45ef")
+		(property "Component Class" ""
+			(at -37.465 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape diamond)
+		(at 107.95 75.565 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec8da12b-13ff-4338-b16e-12aaf025f278")
+		(property "Netclass" "POWER_PLANE"
+			(at 109.1565 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 255 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -118.745 45.085 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "KicadCompDb:Diodes/DIODE_00008")
@@ -5167,7 +5244,7 @@
 		(pin "1"
 			(uuid "00a27486-9029-4128-bc27-56df2a8ce4ea")
 		)
-		(pin ""
+		(pin "3"
 			(uuid "7156dc30-3228-4d76-8ecb-fdad4bc10845")
 		)
 		(pin "7"
@@ -7512,7 +7589,7 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Resistors/RES_SMT_00022")
-		(at 154.178 69.85 0)
+		(at 154.305 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7520,7 +7597,7 @@
 		(dnp no)
 		(uuid "f493ad89-d0fc-4f16-b2b8-172632a76a68")
 		(property "Reference" "R184"
-			(at 151.638 68.834 0)
+			(at 151.765 68.834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7528,7 +7605,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 158.75 68.834 0)
+			(at 158.877 68.834 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7536,7 +7613,7 @@
 			)
 		)
 		(property "Footprint" "footprint:RES_1206"
-			(at 154.686 91.948 0)
+			(at 154.813 91.948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7545,7 +7622,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 154.178 69.85 0)
+			(at 154.305 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7554,7 +7631,7 @@
 			)
 		)
 		(property "Description" "RES 0 OHM JUMPER 1/4W 1206"
-			(at 155.956 79.756 0)
+			(at 156.083 79.756 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7563,7 +7640,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 155.829 64.135 0)
+			(at 155.956 64.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7572,7 +7649,7 @@
 			)
 		)
 		(property "Power" "1/4W"
-			(at 155.829 66.675 0)
+			(at 155.956 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7581,7 +7658,7 @@
 			)
 		)
 		(property "Package" "1206"
-			(at 155.956 71.882 0)
+			(at 156.083 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7589,7 +7666,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 154.432 88.138 0)
+			(at 154.559 88.138 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7598,7 +7675,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RC1206JR-070RL"
-			(at 154.432 77.724 0)
+			(at 154.559 77.724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7607,7 +7684,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 154.178 75.692 0)
+			(at 154.305 75.692 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7616,7 +7693,7 @@
 			)
 		)
 		(property "Distributor Part Number" "311-0.0ERCT-ND"
-			(at 154.94 82.042 0)
+			(at 155.067 82.042 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7625,7 +7702,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 154.178 69.85 0)
+			(at 154.305 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7634,7 +7711,7 @@
 			)
 		)
 		(property "Operating Temperature" "-55°C ~ 155°C"
-			(at 154.94 94.234 0)
+			(at 155.067 94.234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7643,7 +7720,7 @@
 			)
 		)
 		(property "Type" "RES SMT"
-			(at 154.178 69.85 0)
+			(at 154.305 69.85 0)
 			(show_name yes)
 			(effects
 				(font
@@ -7653,7 +7730,7 @@
 			)
 		)
 		(property "Dimensions" "3.10mm x 1.60mm"
-			(at 154.178 69.85 0)
+			(at 154.305 69.85 0)
 			(show_name yes)
 			(effects
 				(font

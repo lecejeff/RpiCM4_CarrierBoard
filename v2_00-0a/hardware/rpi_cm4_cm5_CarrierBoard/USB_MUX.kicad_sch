@@ -1349,6 +1349,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cf4fc6e9-08c2-420e-89f9-3cc8293aa461")
+	)
 	(junction
 		(at 129.54 95.25)
 		(diameter 0)
@@ -2515,10 +2526,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cf795adc-67e1-4d3a-9739-11f0da2bd03f")
 		(property "Reference" "U22"
-			(at 147.32 72.39 0)
+			(at 147.32 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +2536,7 @@
 			)
 		)
 		(property "Value" "FSUSB42UMX"
-			(at 147.32 74.93 0)
+			(at 147.066 94.996 0)
 			(effects
 				(font
 					(size 1.27 1.27)

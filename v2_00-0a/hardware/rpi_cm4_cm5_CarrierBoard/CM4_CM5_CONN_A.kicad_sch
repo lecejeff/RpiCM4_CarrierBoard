@@ -7400,6 +7400,17 @@
 		)
 		(uuid "03980b36-510d-472d-abfe-c2994cc1eda3")
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1d039877-7036-46d6-b3dd-8f1f9a41cc55")
+	)
 	(text "HW watchdog"
 		(exclude_from_sim no)
 		(at 96.266 180.34 0)
@@ -7709,7 +7720,7 @@
 		(uuid "5e799b19-31af-40dd-8932-00e4d0e3346f")
 	)
 	(junction
-		(at 103.505 176.53)
+		(at 104.775 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64ac39c9-fed4-4cfe-b537-bea829cbfeb5")
@@ -8403,7 +8414,7 @@
 	)
 	(wire
 		(pts
-			(xy 103.505 166.37) (xy 103.505 168.91)
+			(xy 104.775 166.37) (xy 104.775 168.91)
 		)
 		(stroke
 			(width 0)
@@ -9623,7 +9634,7 @@
 	)
 	(wire
 		(pts
-			(xy 103.505 175.26) (xy 103.505 176.53)
+			(xy 104.775 175.26) (xy 104.775 176.53)
 		)
 		(stroke
 			(width 0)
@@ -9670,6 +9681,16 @@
 			(type default)
 		)
 		(uuid "69b405dc-3fe2-42ec-b895-c1eba36a7241")
+	)
+	(wire
+		(pts
+			(xy 104.775 176.53) (xy 106.68 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a7855ad-8bbe-42ef-a992-8aa306e9b334")
 	)
 	(wire
 		(pts
@@ -11363,7 +11384,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.915 176.53) (xy 103.505 176.53)
+			(xy 81.915 176.53) (xy 104.775 176.53)
 		)
 		(stroke
 			(width 0)
@@ -11610,16 +11631,6 @@
 			(type default)
 		)
 		(uuid "fa1c0fd4-d79b-43c5-a7a4-55d98875467e")
-	)
-	(wire
-		(pts
-			(xy 103.505 176.53) (xy 106.68 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa732bc0-df9b-44ac-9142-0c820973da85")
 	)
 	(bus
 		(pts
@@ -18657,7 +18668,7 @@
 	)
 	(symbol
 		(lib_id "KiCad_Pwr_Symbols:+1V8")
-		(at 103.505 166.37 0)
+		(at 104.775 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18665,7 +18676,7 @@
 		(dnp no)
 		(uuid "6a97085d-a610-4eb3-afc1-32ccabfa168f")
 		(property "Reference" "#PWR0203"
-			(at 103.505 170.18 0)
+			(at 104.775 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18674,7 +18685,7 @@
 			)
 		)
 		(property "Value" "5V0_CB"
-			(at 103.505 162.56 0)
+			(at 104.775 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18682,7 +18693,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 103.505 166.37 0)
+			(at 104.775 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18691,7 +18702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 103.505 166.37 0)
+			(at 104.775 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18700,7 +18711,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 103.505 166.37 0)
+			(at 104.775 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19766,7 +19777,7 @@
 	)
 	(symbol
 		(lib_id "KicadCompDb:Resistors/RES_SMT_00020")
-		(at 103.505 173.99 90)
+		(at 104.775 173.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19774,7 +19785,7 @@
 		(dnp no)
 		(uuid "836239c3-19ce-475e-8ee4-353b41e76b20")
 		(property "Reference" "R156"
-			(at 104.394 170.942 90)
+			(at 105.664 170.942 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19783,7 +19794,7 @@
 			)
 		)
 		(property "Value" "510K"
-			(at 104.394 173.482 90)
+			(at 105.664 173.482 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19792,7 +19803,7 @@
 			)
 		)
 		(property "Footprint" "footprint:RES_0402"
-			(at 125.603 173.482 0)
+			(at 126.873 173.482 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19801,7 +19812,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
-			(at 103.505 173.99 0)
+			(at 104.775 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19810,7 +19821,7 @@
 			)
 		)
 		(property "Description" "RES 510K OHM 1% 1/16W 0402"
-			(at 113.411 172.212 0)
+			(at 114.681 172.212 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19819,7 +19830,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 123.825 173.736 0)
+			(at 125.095 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19828,7 +19839,7 @@
 			)
 		)
 		(property "Power" "1/16W"
-			(at 117.729 173.736 0)
+			(at 118.999 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19837,7 +19848,7 @@
 			)
 		)
 		(property "Package" "0402"
-			(at 119.761 173.99 0)
+			(at 121.031 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19846,7 +19857,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 121.793 173.736 0)
+			(at 123.063 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19855,7 +19866,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "RC0402FR-10510KL"
-			(at 111.379 173.736 0)
+			(at 112.649 173.736 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19864,7 +19875,7 @@
 			)
 		)
 		(property "Distributor" "DigiKey"
-			(at 109.347 173.99 0)
+			(at 110.617 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19873,7 +19884,7 @@
 			)
 		)
 		(property "Distributor Part Number" "13-RC0402FR-10510KLCT-ND"
-			(at 115.697 173.228 0)
+			(at 116.967 173.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19882,7 +19893,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 103.505 173.99 0)
+			(at 104.775 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19891,7 +19902,7 @@
 			)
 		)
 		(property "Operating Temperature" "-55°C ~ 155°C"
-			(at 127.889 173.228 0)
+			(at 129.159 173.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19900,7 +19911,7 @@
 			)
 		)
 		(property "Type" "RES SMT"
-			(at 103.505 173.99 0)
+			(at 104.775 173.99 0)
 			(show_name yes)
 			(effects
 				(font
@@ -19910,7 +19921,7 @@
 			)
 		)
 		(property "Dimensions" "1.00mm x 0.50mm"
-			(at 103.505 173.99 0)
+			(at 104.775 173.99 0)
 			(show_name yes)
 			(effects
 				(font

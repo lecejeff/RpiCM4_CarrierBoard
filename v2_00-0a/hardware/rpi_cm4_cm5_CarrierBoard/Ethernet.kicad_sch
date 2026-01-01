@@ -3959,6 +3959,17 @@
 	(bus_alias "USB3"
 		(members "U3TXD_P" "U3TXD_N" "U3RXD_P" "U3RXD_N" "USB_P" "USB_N" "USB_VBUS")
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4eaa9aaf-26c8-4e7c-8982-876b961d154a")
+	)
 	(junction
 		(at 137.16 77.47)
 		(diameter 0)

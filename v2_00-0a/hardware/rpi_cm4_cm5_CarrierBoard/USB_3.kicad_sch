@@ -23071,7 +23071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "1V0_CB"
+		(property "Value" "1V05_CB"
 			(at 167.64 41.656 0)
 			(effects
 				(font

@@ -2921,6 +2921,17 @@
 			"CLK_N"
 		)
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "955ee31d-e7b7-4820-a368-402b645e0769")
+	)
 	(junction
 		(at 182.88 55.245)
 		(diameter 0)

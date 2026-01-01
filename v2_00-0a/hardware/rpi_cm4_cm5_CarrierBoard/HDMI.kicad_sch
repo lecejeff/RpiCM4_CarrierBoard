@@ -2825,6 +2825,17 @@
 			"SCL" "CEC" "HPD"
 		)
 	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "922db4c5-2a79-471a-96bd-23b1d0c6c79f")
+	)
 	(junction
 		(at 186.055 53.975)
 		(diameter 0)

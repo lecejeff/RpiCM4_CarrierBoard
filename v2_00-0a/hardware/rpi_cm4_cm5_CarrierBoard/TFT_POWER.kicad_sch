@@ -5465,7 +5465,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9617,6 +9617,17 @@
 			)
 			(embedded_fonts no)
 		)
+	)
+	(text "Resistors are 1% 1/16W 0402 unless otherwise noted\nCapacitors are 10% 50V X7R 0402 unless otherwise noted"
+		(exclude_from_sim no)
+		(at 12.7 170.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c3f6ff6-8557-4b38-ab12-76755ad690b6")
 	)
 	(text "TFT Charge Pump for\nVGH and VGL rails\n"
 		(exclude_from_sim no)
@@ -14667,7 +14678,7 @@
 			)
 		)
 		(property "Current (Rated)" "5.9A"
-			(at 151.638 17.018 0)
+			(at 154.94 17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14675,13 +14686,11 @@
 			)
 		)
 		(property "Inductance" "4.7uH"
-			(at 149.86 15.875 0)
-			(show_name yes)
+			(at 149.606 17.018 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Type" "COMPOSITE"
@@ -25527,7 +25536,7 @@
 		(pin "5"
 			(uuid "e79ea7a7-8eaf-4328-8549-6202d0f97bab")
 		)
-		(pin "2"
+		(pin "4"
 			(uuid "de291f44-48f4-4c57-a3fc-f6be0cc4b14e")
 		)
 		(pin "3"
@@ -25734,7 +25743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "5V0_CB"
+		(property "Value" "3V3_CB"
 			(at 112.903 16.129 0)
 			(effects
 				(font
